@@ -19,6 +19,9 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('slug')->unique();
             $table->string('video_url')->nullable(); // jika ada link YouTube/vimeo
+            $table->string('client')->nullable();
+            $table->string('year')->nullable();
+            $table->boolean('is_featured')->default(false);
             $table->timestamps();
         });
         

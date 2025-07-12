@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +24,8 @@ Route::get('/portfolios/{slug}', [LandingPageController::class, 'portfolioDetail
 Route::get('/services', [LandingPageController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [LandingPageController::class, 'serviceDetail'])->name('service.detail');
 
+Route::get('/about', [LandingPageController::class, 'about'])->name('about');
+
+
+// page kontak
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');
