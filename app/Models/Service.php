@@ -11,12 +11,22 @@ class Service extends Model
 
     protected $fillable = ['name', 'description', 'icon', 'is_featured'];
 
-    public function category() {
+    public function category()
+    {
         return $this->belongsTo(Category::class);
     }
-    
+
     protected $casts = [
         'features' => 'array',
     ];
-    
+
+    public function packages()
+    {
+        return $this->hasMany(Pack::class);
+    }
+
+    public function portfolios()
+    {
+        return $this->hasMany(Portfolio::class, 'category_id', 'category_id');
+    }
 }

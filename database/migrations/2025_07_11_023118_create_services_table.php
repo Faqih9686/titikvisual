@@ -22,7 +22,6 @@ return new class extends Migration
             $table->decimal('price', 12, 2)->nullable();
             $table->json('features')->nullable(); // bisa simpan daftar fitur
             $table->string('slug')->unique(); // untuk URL detail
-
             $table->timestamps();
         });
     }

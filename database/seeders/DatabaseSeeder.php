@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             ServiceSeeder::class,
             PortfolioSeeder::class,
             TestimoniSeeder::class,
+            PackageSeeder::class,
         ]);
     }
 }

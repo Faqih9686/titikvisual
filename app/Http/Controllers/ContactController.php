@@ -7,6 +7,11 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        return view('contact.index');
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -16,7 +21,7 @@ class ContactController extends Controller
             'namept' => 'required|string|max:100',
             'layanan' => 'required|string|max:100',
             'timeline' => 'required|string|max:20',
-            'budget'  => 'required|string|max:100',
+            'budget'  => 'nullable|string|max:100',
             'message' => 'nullable|string|max:1000',
         ]);
 
@@ -25,3 +30,4 @@ class ContactController extends Controller
         return redirect()->back()->with('success', 'Pesan berhasil dikirim. Kami akan segera menghubungi Anda!');
     }
 }
+
