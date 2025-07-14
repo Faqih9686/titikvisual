@@ -14,7 +14,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             <!-- UI/UX Design -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center border">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg">
                 <div class="flex justify-center mb-4">
                     <div class="bg-purple-100 text-purple-600 p-3 rounded-full">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@
             </div>
 
             <!-- Website & Aplikasi -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center border">
+           <div class="bg-white shadow-md rounded-lg p-6 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg">
                 <div class="flex justify-center mb-4">
                     <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Logo Design -->
-            <div class="bg-white shadow-md rounded-lg p-6 text-center border">
+            <div class="bg-white shadow-md rounded-lg p-6 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg">
                 <div class="flex justify-center mb-4">
                     <div class="bg-orange-100 text-orange-500 p-3 rounded-full">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
             </div>
 
             <!-- Social Media Management -->
-<div class="bg-white shadow-md rounded-lg p-6 text-center border">
+<div class="bg-white shadow-md rounded-lg p-6 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg">
   <!-- Ikon -->
   <div class="flex justify-center mb-4">
     <div class="bg-pink-100 text-pink-500 p-3 rounded-full">
@@ -97,7 +97,7 @@
 </div>
 
             <!-- Custom Merchandise -->
-<div class="bg-white shadow-md rounded-lg p-6 text-center border">
+<div class="bg-white shadow-md rounded-lg p-6 text-center border transform transition duration-300 hover:scale-105 hover:shadow-lg">
   <!-- Ikon -->
   <div class="flex justify-center mb-4">
     <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
