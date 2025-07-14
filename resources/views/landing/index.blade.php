@@ -42,22 +42,26 @@
 
     <!-- Tombol -->
     <div class="flex justify-center space-x-4">
-      <a href="#" class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 inline-flex items-center space-x-2">
-         <!-- SVG Logo Titik Visual -->
-  <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6.88407 10.9299C6.82455 10.6991 6.70429 10.4886 6.53581 10.3201C6.36733 10.1516 6.15678 10.0314 5.92607 9.97185L1.83607 8.91719C1.76629 8.89738 1.70487 8.85535 1.66114 8.79748C1.61741 8.73961 1.59375 8.66906 1.59375 8.59652C1.59375 8.52398 1.61741 8.45343 1.66114 8.39556C1.70487 8.33769 1.76629 8.29566 1.83607 8.27585L5.92607 7.22052C6.1567 7.16106 6.36719 7.0409 6.53567 6.87255C6.70414 6.70419 6.82444 6.49378 6.88407 6.26319L7.93873 2.17319C7.95834 2.10313 8.00032 2.04141 8.05828 1.99745C8.11624 1.95349 8.18699 1.92969 8.25973 1.92969C8.33248 1.92969 8.40323 1.95349 8.46119 1.99745C8.51914 2.04141 8.56113 2.10313 8.58073 2.17319L9.63473 6.26319C9.69425 6.4939 9.81451 6.70445 9.98299 6.87293C10.1515 7.04141 10.362 7.16167 10.5927 7.22119L14.6827 8.27519C14.7531 8.29459 14.8151 8.33653 14.8593 8.39457C14.9035 8.45262 14.9274 8.52356 14.9274 8.59652C14.9274 8.66948 14.9035 8.74042 14.8593 8.79847C14.8151 8.85651 14.7531 8.89845 14.6827 8.91785L10.5927 9.97185C10.362 10.0314 10.1515 10.1516 9.98299 10.3201C9.81451 10.4886 9.69425 10.6991 9.63473 10.9299L8.58007 15.0199C8.56046 15.0899 8.51848 15.1516 8.46052 15.1956C8.40256 15.2396 8.33181 15.2634 8.25907 15.2634C8.18632 15.2634 8.11557 15.2396 8.05761 15.1956C7.99966 15.1516 7.95767 15.0899 7.93807 15.0199L6.88407 10.9299Z" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M13.5898 2.59375V5.26042" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M14.9245 3.92969H12.2578" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M2.92578 11.9297V13.263" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M3.59115 12.5938H2.25781" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>
-  <span>Lihat Portofolio</span>
-      </a>
+ <!-- Tombol Lihat Portofolio -->
+  <a href="{{ route('portofolio') }}"
+     class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 inline-flex items-center space-x-2">
+     
+    <!-- SVG Icon -->
+    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6.88407 10.9299C6.82455 10.6991 6.70429 10.4886 6.53581 10.3201C6.36733 10.1516 6.15678 10.0314 5.92607 9.97185L1.83607 8.91719C1.76629 8.89738 1.70487 8.85535 1.66114 8.79748C1.61741 8.73961 1.59375 8.66906 1.59375 8.59652C1.59375 8.52398 1.61741 8.45343 1.66114 8.39556C1.70487 8.33769 1.76629 8.29566 1.83607 8.27585L5.92607 7.22052C6.1567 7.16106 6.36719 7.0409 6.53567 6.87255C6.70414 6.70419 6.82444 6.49378 6.88407 6.26319L7.93873 2.17319C7.95834 2.10313 8.00032 2.04141 8.05828 1.99745C8.11624 1.95349 8.18699 1.92969 8.25973 1.92969C8.33248 1.92969 8.40323 1.95349 8.46119 1.99745C8.51914 2.04141 8.56113 2.10313 8.58073 2.17319L9.63473 6.26319C9.69425 6.4939 9.81451 6.70445 9.98299 6.87293C10.1515 7.04141 10.362 7.16167 10.5927 7.22119L14.6827 8.27519C14.7531 8.29459 14.8151 8.33653 14.8593 8.39457C14.9035 8.45262 14.9274 8.52356 14.9274 8.59652C14.9274 8.66948 14.9035 8.74042 14.8593 8.79847C14.8151 8.85651 14.7531 8.89845 14.6827 8.91785L10.5927 9.97185C10.362 10.0314 10.1515 10.1516 9.98299 10.3201C9.81451 10.4886 9.69425 10.6991 9.63473 10.9299L8.58007 15.0199C8.56046 15.0899 8.51848 15.1516 8.46052 15.1956C8.40256 15.2396 8.33181 15.2634 8.25907 15.2634C8.18632 15.2634 8.11557 15.2396 8.05761 15.1956C7.99966 15.1516 7.95767 15.0899 7.93807 15.0199L6.88407 10.9299Z" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5898 2.59375V5.26042" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14.9245 3.92969H12.2578" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2.92578 11.9297V13.263" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3.59115 12.5938H2.25781" stroke="#fff" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Lihat Portofolio</span>
+  </a>
+
       <a href="#"
    class="border border-gray-300 px-5 py-2 rounded-full font-medium text-gray-700 hover:bg-gray-100 inline-flex items-center space-x-2">
   <span>💬</span>
   <span>Konsultasi Gratis</span>
-      </a>
+</a>
     </div>
   </div>
 </div>
@@ -255,8 +259,9 @@
   <div class="flex gap-4">
     <!-- Ikon -->
     <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M8 12h8m-8-4h8m-4-4v16" />
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.5273 2.39844H7.52734C6.42277 2.39844 5.52734 3.29387 5.52734 4.39844V20.3984C5.52734 21.503 6.42277 22.3984 7.52734 22.3984H17.5273C18.6319 22.3984 19.5273 21.503 19.5273 20.3984V4.39844C19.5273 3.29387 18.6319 2.39844 17.5273 2.39844Z" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.5273 18.3984H12.5373" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </div>
 
@@ -398,8 +403,11 @@
         Custom Merchandise <span class="text-pink-600">Titik Visual</span>
       </h2>
       <span class="inline-flex items-center gap-1 bg-pink-100 text-pink-600 text-xs font-semibold px-3 py-1 rounded-full">
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.931 6.14062H3.26432C2.89613 6.14062 2.59766 6.4391 2.59766 6.80729V8.14062C2.59766 8.50881 2.89613 8.80729 3.26432 8.80729H13.931C14.2992 8.80729 14.5977 8.50881 14.5977 8.14062V6.80729C14.5977 6.4391 14.2992 6.14062 13.931 6.14062Z" stroke="#C2410C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8.59766 6.14062V14.8073" stroke="#C2410C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.263 8.80469V13.4714C13.263 13.825 13.1225 14.1641 12.8725 14.4142C12.6224 14.6642 12.2833 14.8047 11.9297 14.8047H5.26302C4.9094 14.8047 4.57026 14.6642 4.32021 14.4142C4.07016 14.1641 3.92969 13.825 3.92969 13.4714V8.80469" stroke="#C2410C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M5.59635 6.13831C5.15433 6.13831 4.7304 5.96272 4.41784 5.65016C4.10528 5.3376 3.92969 4.91367 3.92969 4.47165C3.92969 4.02962 4.10528 3.6057 4.41784 3.29313C4.7304 2.98057 5.15433 2.80498 5.59635 2.80498C6.23948 2.79377 6.8697 3.10582 7.40485 3.70042C7.93999 4.29502 8.3552 5.14458 8.59635 6.13831C8.8375 5.14458 9.25272 4.29502 9.78786 3.70042C10.323 3.10582 10.9532 2.79377 11.5964 2.80498C12.0384 2.80498 12.4623 2.98057 12.7749 3.29313C13.0874 3.6057 13.263 4.02962 13.263 4.47165C13.263 4.91367 13.0874 5.3376 12.7749 5.65016C12.4623 5.96272 12.0384 6.13831 11.5964 6.13831" stroke="#C2410C" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         Kualitas Premium
       </span>
@@ -576,8 +584,8 @@
       <!-- Tombol -->
       <div class="absolute bottom-8 right-8">
         <a href="#" class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-2 text-sm font-semibold rounded-lg inline-flex items-center gap-1 shadow-md">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round" />
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M15.5205 12.0795V14.0795C15.5212 14.2652 15.4832 14.449 15.4088 14.6191C15.3344 14.7892 15.2253 14.9419 15.0885 15.0675C14.9517 15.193 14.7902 15.2885 14.6143 15.348C14.4384 15.4075 14.252 15.4296 14.0671 15.4129C12.0157 15.19 10.0451 14.489 8.3138 13.3662C6.70302 12.3427 5.33735 10.977 4.3138 9.36621C3.18712 7.62701 2.48596 5.64687 2.26713 3.58621C2.25047 3.40186 2.27238 3.21605 2.33146 3.04063C2.39055 2.8652 2.48551 2.704 2.61031 2.56729C2.7351 2.43058 2.887 2.32135 3.05632 2.24656C3.22565 2.17177 3.40869 2.13305 3.5938 2.13288H5.5938C5.91733 2.12969 6.23099 2.24426 6.4763 2.45523C6.72162 2.6662 6.88185 2.95917 6.92713 3.27954C7.01155 3.91959 7.1681 4.54803 7.3938 5.15288C7.48349 5.39149 7.5029 5.65082 7.44973 5.90013C7.39656 6.14944 7.27304 6.37828 7.0938 6.55954L6.24713 7.40621C7.19617 9.07524 8.5781 10.4572 10.2471 11.4062L11.0938 10.5595C11.2751 10.3803 11.5039 10.2568 11.7532 10.2036C12.0025 10.1504 12.2618 10.1698 12.5005 10.2595C13.1053 10.4852 13.7338 10.6418 14.3738 10.7262C14.6976 10.7719 14.9934 10.935 15.2048 11.1845C15.4162 11.4341 15.5286 11.7526 15.5205 12.0795Z" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           Hubungi Titik Visual
         </a>
@@ -783,94 +791,323 @@
     <p class="text-gray-500 mb-10">Kembangkan karir kreatif Anda bersama Titik Visual</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-      <!-- Daftar Card -->
-      @foreach([
-        [
-          'posisi' => 'UI/UX Designer',
-          'tipe' => 'Magang',
-          'desc' => 'Bergabung dengan tim Titik Visual sebagai UI/UX Designer',
-          'syarat' => [
-            'Mahasiswa DKV, Multimedia, atau setara',
-            'Menguasai Figma, Adobe XD, Sketch',
-            'Memahami prinsip UI/UX design'
-          ],
-          'gradient' => 'from-purple-500 to-pink-500'
-        ],
-        [
-          'posisi' => 'Web Developer',
-          'tipe' => 'Magang',
-          'desc' => 'Bangun website dan aplikasi web bersama tim Titik Visual',
-          'syarat' => [
-            'Mahasiswa Informatika, Sistem Informasi',
-            'Menguasai HTML, CSS, Javascript',
-            'Familiar dengan React, Next.js'
-          ],
-          'gradient' => 'from-purple-500 to-pink-500'
-        ],
-        [
-          'posisi' => 'Digital Marketing Specialist',
-          'tipe' => 'Magang',
-          'desc' => 'Kembangkan strategi digital marketing di Titik Visual',
-          'syarat' => [
-            'Mahasiswa aktif (minimal semester 4)',
-            'Jurusan pemasaran, komunikasi, bisnis',
-            'Minat SEO, Social Media, Email Marketing'
-          ],
-          'gradient' => 'from-blue-500 to-indigo-500'
-        ],
-        [
-          'posisi' => 'Social Media Specialist',
-          'tipe' => 'Magang',
-          'desc' => 'Kelola dan kembangkan media sosial tim Titik Visual',
-          'syarat' => [
-            'Mahasiswa aktif (minimal semester 4)',
-            'Memahami platform media sosial',
-            'Kreatif dalam content creation'
-          ],
-          'gradient' => 'from-pink-500 to-red-500'
-        ]
-      ] as $job)
-      <div class="bg-white rounded-xl shadow p-6 border">
-        <h3 class="font-bold text-lg mb-1">
-          {{ $job['posisi'] }}
-          <span class="text-pink-500 text-sm font-semibold">• {{ $job['tipe'] }}</span>
-        </h3>
-        <p class="text-sm text-gray-500 mb-3">{{ $job['desc'] }}</p>
-        <ul class="text-sm text-gray-600 space-y-1 mb-4">
-          @foreach($job['syarat'] as $item)
-          <li>✔️ {{ $item }}</li>
-          @endforeach
-        </ul>
-        <button class="flex items-center gap-2 bg-gradient-to-r {{ $job['gradient'] }} text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg transition text-sm font-medium">
-          <!-- SVG Icon -->
-          <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_125_1990)">
-              <path d="M3.73047 8.10156H13.0638" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8.39844 3.4375L13.0651 8.10417L8.39844 12.7708" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_125_1990">
-                <rect width="16" height="16" fill="white" transform="translate(0.398438 0.101562)"/>
-              </clipPath>
+      
+      <!-- Card 1 -->
+<div class="relative bg-white rounded-xl shadow p-6 border">
+  <!-- Badge Magang di pojok kanan atas -->
+  <div class="absolute top-4 right-4">
+    <span class="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_332_2124)">
+        <path d="M11.5102 5.75805C11.5997 5.71857 11.6757 5.65369 11.7287 5.57146C11.7817 5.48922 11.8094 5.39325 11.8084 5.29542C11.8073 5.1976 11.7777 5.10222 11.723 5.0211C11.6683 4.93998 11.591 4.87668 11.5007 4.83905L7.21519 2.88705C7.08491 2.82763 6.94339 2.79688 6.80019 2.79688C6.657 2.79688 6.51547 2.82763 6.38519 2.88705L2.10019 4.83705C2.01118 4.87604 1.93545 4.94012 1.88228 5.02146C1.8291 5.1028 1.80078 5.19787 1.80078 5.29505C1.80078 5.39223 1.8291 5.48731 1.88228 5.56865C1.93545 5.64999 2.01118 5.71407 2.10019 5.75305L6.38519 7.70705C6.51547 7.76648 6.657 7.79723 6.80019 7.79723C6.94339 7.79723 7.08491 7.76648 7.21519 7.70705L11.5102 5.75805Z" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.8008 5.29688V8.29688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.80078 6.54688V8.29688C3.80078 8.6947 4.11685 9.07623 4.67946 9.35754C5.24207 9.63884 6.00513 9.79687 6.80078 9.79688C7.59643 9.79687 8.35949 9.63884 8.9221 9.35754C9.48471 9.07623 9.80078 8.6947 9.80078 8.29688V6.54688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_332_2124">
+            <rect width="12" height="12" fill="white" transform="translate(0.800781 0.296875)"/>
+            </clipPath>
             </defs>
-          </svg>
-          Lamar Sekarang
-        </button>
-      </div>
-      @endforeach
+      </svg>
+      Magang
+    </span>
+  </div>
+
+  <!-- Judul, Ikon, dan Deskripsi -->
+<div class="flex items-start gap-3 mb-5">
+  <!-- Ikon Bulat -->
+  <div class="w-10 h-10 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.9061 21.7928C15.7185 21.9803 15.4642 22.0856 15.1991 22.0856C14.9339 22.0856 14.6796 21.9803 14.4921 21.7928L12.9061 20.2069C12.7186 20.0193 12.6133 19.765 12.6133 19.4998C12.6133 19.2347 12.7186 18.9804 12.9061 18.7928L18.4921 13.2068C18.6796 13.0194 18.9339 12.9141 19.1991 12.9141C19.4642 12.9141 19.7185 13.0194 19.9061 13.2068L21.4921 14.7928C21.6795 14.9804 21.7849 15.2347 21.7849 15.4998C21.7849 15.765 21.6795 16.0193 21.4921 16.2068L15.9061 21.7928Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18.1992 13.5L16.8242 6.62601C16.7868 6.43899 16.6967 6.26656 16.5645 6.12907C16.4324 5.99157 16.2636 5.89475 16.0782 5.85001L3.43422 2.52801C3.26765 2.48773 3.09353 2.49094 2.92855 2.53733C2.76358 2.58371 2.61329 2.67172 2.49211 2.79289C2.37093 2.91407 2.28293 3.06436 2.23655 3.22933C2.19016 3.39431 2.18695 3.56843 2.22722 3.73501L5.54922 16.379C5.59397 16.5644 5.69079 16.7331 5.82829 16.8653C5.96578 16.9975 6.1382 17.0876 6.32522 17.125L13.1992 18.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2.5 2.79688L9.786 10.0829" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.1992 13.5C12.3038 13.5 13.1992 12.6046 13.1992 11.5C13.1992 10.3954 12.3038 9.5 11.1992 9.5C10.0946 9.5 9.19922 10.3954 9.19922 11.5C9.19922 12.6046 10.0946 13.5 11.1992 13.5Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Judul dan Deskripsi -->
+  <div>
+    <h3 class="font-bold text-lg leading-tight">UI/UX Designer</h3>
+    <p class="text-sm text-gray-500">
+      Bergabung dengan tim Titik Visual sebagai UI/UX Designer
+    </p>
+  </div>
+</div>
+
+  <!-- List Syarat -->
+  <ul class="text-sm text-gray-600 space-y-2 mb-5">
+    <li class="flex items-start gap-2">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Mahasiswa DKV, Multimedia, atau setara</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Menguasai Figma, Adobe XD, Sketch</span>
+    </li>
+    <li class="flex items-start gap-2">
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Memahami prinsip UI/UX design</span>
+    </li>
+  </ul>
+
+  <!-- Tombol Lamar -->
+  <button class="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transform transition duration-300 ease-in-out text-sm font-medium">
+    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.73047 8.10156H13.0638" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.39844 3.4375L13.0651 8.10417L8.39844 12.7708" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Lamar Sekarang
+  </button>
+</div>
+
+
+      <!-- Card 2 -->
+<div class="relative bg-white rounded-xl shadow p-6 border">
+  <!-- Badge Magang di pojok kanan atas -->
+  <div class="absolute top-4 right-4">
+    <span class="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_332_2124)">
+        <path d="M11.5102 5.75805C11.5997 5.71857 11.6757 5.65369 11.7287 5.57146C11.7817 5.48922 11.8094 5.39325 11.8084 5.29542C11.8073 5.1976 11.7777 5.10222 11.723 5.0211C11.6683 4.93998 11.591 4.87668 11.5007 4.83905L7.21519 2.88705C7.08491 2.82763 6.94339 2.79688 6.80019 2.79688C6.657 2.79688 6.51547 2.82763 6.38519 2.88705L2.10019 4.83705C2.01118 4.87604 1.93545 4.94012 1.88228 5.02146C1.8291 5.1028 1.80078 5.19787 1.80078 5.29505C1.80078 5.39223 1.8291 5.48731 1.88228 5.56865C1.93545 5.64999 2.01118 5.71407 2.10019 5.75305L6.38519 7.70705C6.51547 7.76648 6.657 7.79723 6.80019 7.79723C6.94339 7.79723 7.08491 7.76648 7.21519 7.70705L11.5102 5.75805Z" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.8008 5.29688V8.29688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.80078 6.54688V8.29688C3.80078 8.6947 4.11685 9.07623 4.67946 9.35754C5.24207 9.63884 6.00513 9.79687 6.80078 9.79688C7.59643 9.79687 8.35949 9.63884 8.9221 9.35754C9.48471 9.07623 9.80078 8.6947 9.80078 8.29688V6.54688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_332_2124">
+            <rect width="12" height="12" fill="white" transform="translate(0.800781 0.296875)"/>
+            </clipPath>
+            </defs>
+      </svg>
+      Magang
+    </span>
+  </div>
+
+  <!-- Judul, Ikon, dan Deskripsi -->
+<div class="flex items-start gap-3 mb-5">
+  <!-- Ikon Bulat -->
+  <div class="w-10 h-10 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.1992 18.5L22.1992 12.5L16.1992 6.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.19922 6.5L2.19922 12.5L8.19922 18.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Judul dan Deskripsi -->
+  <div>
+    <h3 class="font-bold text-lg leading-tight">Web Developer</h3>
+    <p class="text-sm text-gray-500">
+      Bergabung dengan tim Titik Visual sebagai UI/UX Designer
+    </p>
+  </div>
+</div>
+
+  <!-- Konten -->
+  <p class="text-sm text-gray-500 mb-3">Bangun website dan aplikasi web bersama tim Titik Visual</p>
+  <ul class="text-sm text-gray-600 space-y-1 mb-4">
+    <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa Informatika, Sistem Informasi</span>
+          </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Menguasai HTML, CSS, Javascript</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Familiar dengan React, Next.js</span>
+            </div>
+  </ul>
+  <button class="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-400 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transform transition duration-300 ease-in-out text-sm font-medium">
+    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.73047 8.10156H13.0638" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.39844 3.4375L13.0651 8.10417L8.39844 12.7708" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Lamar Sekarang
+  </button>
+</div>
+
+      <!-- Card 3 -->
+<div class="relative bg-white rounded-xl shadow p-6 border">
+  <!-- Badge Magang di pojok kanan atas -->
+  <div class="absolute top-4 right-4">
+    <span class="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+      <!-- Ikon Topi Wisuda -->
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_332_2124)">
+        <path d="M11.5102 5.75805C11.5997 5.71857 11.6757 5.65369 11.7287 5.57146C11.7817 5.48922 11.8094 5.39325 11.8084 5.29542C11.8073 5.1976 11.7777 5.10222 11.723 5.0211C11.6683 4.93998 11.591 4.87668 11.5007 4.83905L7.21519 2.88705C7.08491 2.82763 6.94339 2.79688 6.80019 2.79688C6.657 2.79688 6.51547 2.82763 6.38519 2.88705L2.10019 4.83705C2.01118 4.87604 1.93545 4.94012 1.88228 5.02146C1.8291 5.1028 1.80078 5.19787 1.80078 5.29505C1.80078 5.39223 1.8291 5.48731 1.88228 5.56865C1.93545 5.64999 2.01118 5.71407 2.10019 5.75305L6.38519 7.70705C6.51547 7.76648 6.657 7.79723 6.80019 7.79723C6.94339 7.79723 7.08491 7.76648 7.21519 7.70705L11.5102 5.75805Z" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.8008 5.29688V8.29688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.80078 6.54688V8.29688C3.80078 8.6947 4.11685 9.07623 4.67946 9.35754C5.24207 9.63884 6.00513 9.79687 6.80078 9.79688C7.59643 9.79687 8.35949 9.63884 8.9221 9.35754C9.48471 9.07623 9.80078 8.6947 9.80078 8.29688V6.54688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_332_2124">
+            <rect width="12" height="12" fill="white" transform="translate(0.800781 0.296875)"/>
+            </clipPath>
+            </defs>
+      </svg>
+      Magang
+    </span>
+  </div>
+
+   <!-- Judul, Ikon, dan Deskripsi -->
+<div class="flex items-start gap-3 mb-5">
+  <!-- Ikon Bulat -->
+  <div class="w-10 h-10 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.1992 3.10156H4.19922C3.09465 3.10156 2.19922 3.99699 2.19922 5.10156V15.1016C2.19922 16.2061 3.09465 17.1016 4.19922 17.1016H20.1992C21.3038 17.1016 22.1992 16.2061 22.1992 15.1016V5.10156C22.1992 3.99699 21.3038 3.10156 20.1992 3.10156Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.19922 21.1016H16.1992" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.1992 17.1016V21.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Judul dan Deskripsi -->
+  <div>
+    <h3 class="font-bold text-lg leading-tight">Digital Marketing Specialist</h3>
+    <p class="text-sm text-gray-500">
+      Bergabung dengan tim Titik Visual sebagai UI/UX Designer
+    </p>
+  </div>
+</div>
+
+  <!-- Konten Card -->
+  <p class="text-sm text-gray-500 mb-3">Kembangkan strategi digital marketing di Titik Visual</p>
+  <ul class="text-sm text-gray-600 space-y-1 mb-4">
+         <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa aktif (minimal semester 4)</span>
+          </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Jurusan pemasaran, komunikasi, bisnis</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Minat SEO, Social Media, Email Marketing</span>
+            </div>
+  </ul>
+  <button class="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-300 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transform transition duration-300 ease-in-out text-sm font-medium">
+    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.73047 8.10156H13.0638" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.39844 3.4375L13.0651 8.10417L8.39844 12.7708" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Lamar Sekarang
+  </button>
+</div>
+
+<!-- Card 4 -->
+<div class="relative bg-white rounded-xl shadow p-6 border">
+  <!-- Badge Magang di pojok kanan atas -->
+  <div class="absolute top-4 right-4">
+    <span class="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold text-purple-600 bg-purple-100 rounded-full">
+      <!-- Ikon Topi Wisuda -->
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_332_2124)">
+        <path d="M11.5102 5.75805C11.5997 5.71857 11.6757 5.65369 11.7287 5.57146C11.7817 5.48922 11.8094 5.39325 11.8084 5.29542C11.8073 5.1976 11.7777 5.10222 11.723 5.0211C11.6683 4.93998 11.591 4.87668 11.5007 4.83905L7.21519 2.88705C7.08491 2.82763 6.94339 2.79688 6.80019 2.79688C6.657 2.79688 6.51547 2.82763 6.38519 2.88705L2.10019 4.83705C2.01118 4.87604 1.93545 4.94012 1.88228 5.02146C1.8291 5.1028 1.80078 5.19787 1.80078 5.29505C1.80078 5.39223 1.8291 5.48731 1.88228 5.56865C1.93545 5.64999 2.01118 5.71407 2.10019 5.75305L6.38519 7.70705C6.51547 7.76648 6.657 7.79723 6.80019 7.79723C6.94339 7.79723 7.08491 7.76648 7.21519 7.70705L11.5102 5.75805Z" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.8008 5.29688V8.29688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.80078 6.54688V8.29688C3.80078 8.6947 4.11685 9.07623 4.67946 9.35754C5.24207 9.63884 6.00513 9.79687 6.80078 9.79688C7.59643 9.79687 8.35949 9.63884 8.9221 9.35754C9.48471 9.07623 9.80078 8.6947 9.80078 8.29688V6.54688" stroke="#7E22CE" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_332_2124">
+            <rect width="12" height="12" fill="white" transform="translate(0.800781 0.296875)"/>
+            </clipPath>
+            </defs>
+      </svg>
+      Magang
+    </span>
+  </div>
+
+   <!-- Judul, Ikon, dan Deskripsi -->
+<div class="flex items-start gap-3 mb-5">
+  <!-- Ikon Bulat -->
+  <div class="w-10 h-10 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.1992 7.10156L13.6992 15.6016L8.69922 10.6016L2.19922 17.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.1992 7.10156H22.1992V13.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Judul dan Deskripsi -->
+  <div>
+    <h3 class="font-bold text-lg leading-tight">Sosial Media Specialist</h3>
+    <p class="text-sm text-gray-500">
+      Bergabung dengan tim Titik Visual sebagai UI/UX Designer
+    </p>
+  </div>
+</div>
+
+  <!-- Konten Card -->
+  <p class="text-sm text-gray-500 mb-3">Kelola dan kembangkan media sosial tim Titik Visual</p>
+  <ul class="text-sm text-gray-600 space-y-1 mb-4">
+     <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa aktif (minimal semester 4)</span>
+          </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Memahami platform media sosial</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Kreatif dalam content creation</span>
+            </div>
+  </ul>
+  <button class="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-red-500 text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transform transition duration-300 ease-in-out text-sm font-medium">
+    <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.73047 8.10156H13.0638" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8.39844 3.4375L13.0651 8.10417L8.39844 12.7708" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Lamar Sekarang
+  </button>
+</div>
+
     </div>
 
     <!-- Tombol Lihat Semua -->
-<div class="mt-10">
-  <a href="#"
-     class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-purple-500 text-purple-600 hover:bg-purple-50 transition font-medium text-sm">
-    Lihat Semua Posisi
-    <!-- Ikon panah kanan -->
-    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-    </svg>
-  </a>
-</div>
+    <div class="mt-10">
+      <a href="#"
+         class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-purple-500 text-purple-600 hover:bg-purple-50 transition font-medium text-sm">
+        Lihat Semua Posisi
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- Section: Kontak & Ajakan -->
