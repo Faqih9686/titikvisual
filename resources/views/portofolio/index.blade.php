@@ -42,6 +42,7 @@
   </div>
 </section>
 
+<!-- featured project -->
 <section class="py-24 bg-white text-center px-4">
   <div class="max-w-7xl mx-auto">
     <h2 class="text-4xl font-bold text-purple-700 mb-2">Featured Projects</h2>
@@ -70,7 +71,7 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
@@ -88,14 +89,18 @@
       <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
       <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">ShopNow Indonesia</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -120,7 +125,7 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
@@ -129,23 +134,27 @@
   <div class="p-4 text-left">
     <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">saaS Dashboard Desain</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Dashboard design untuk SaaS platform dengan data visualization yang clear dan user-friendly interface</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Web App</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Dashboard</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">saaS</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">DataFlow Solutions</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -170,32 +179,36 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Mobile App</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
-      <span class="text-sm text-gray-500">2024</span>
+      <h3 class="font-bold text-lg text-gray-800">Banking Mobile App</h3>
+      <span class="text-sm text-gray-500">2023</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Secure dan user-friendly banking app dengan modern interface dan advanced security features</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile App</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Banking</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Security</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium"> SecureBank Digital</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -220,7 +233,7 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
@@ -238,14 +251,18 @@
       <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
       <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">ShopNow Indonesia</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -270,7 +287,7 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
@@ -279,23 +296,27 @@
   <div class="p-4 text-left">
     <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">SaaS Dashboard Desain</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Dashboard design untuk SaaS platform dengan data visualization yang clear dan user-friendly interface</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Web app</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Dashboard</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">saaS</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">DataFlow Solutions</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -318,34 +339,33 @@
         </svg>
       </button>
     </div>
-
-    <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-      Featured
-    </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Web Development</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">Corporate Website</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Website Corporate yang modern dan profesional dengan CMS integration untuk easy content management</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Website</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Corporate</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Responsive</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">PT. Maju Bersama</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -370,32 +390,36 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Mobile App</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
-      <span class="text-sm text-gray-500">2024</span>
+      <h3 class="font-bold text-lg text-gray-800">Banking Mobile App</h3>
+      <span class="text-sm text-gray-500">2023</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Secure dan User-frendly banking app dengan modern interface dan advanced security features</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile App</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Banking</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Security</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">SecureBank Digital</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -418,34 +442,33 @@
         </svg>
       </button>
     </div>
-
-    <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-      Featured
-    </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Branding</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">Brand Identity package</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Complete brand Identity package termasuk logo, color pallete, typography, dan Brand Guidelines</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Logo</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Brand Identity</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Guidelines</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">GrenTech Startup</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -468,34 +491,33 @@
         </svg>
       </button>
     </div>
-
-    <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-      Featured
-    </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Social media</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">Sosial media campaign</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Sosial media campaign design untuk fashion brand dengan consisten visual Identity dan engaging content </p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Sosial media</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">campaign</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Instagram</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">Fashion Brand Co</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -518,34 +540,33 @@
         </svg>
       </button>
     </div>
-
-    <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-      Featured
-    </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Web Development</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
-      <span class="text-sm text-gray-500">2024</span>
+      <h3 class="font-bold text-lg text-gray-800">Restaurant Website</h3>
+      <span class="text-sm text-gray-500">2023</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Website Restaurant dengan online menu, table booking system, dan gallery yang menarik</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Website</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Restaurant</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Online Menu</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">Rasa Nusantara</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -570,7 +591,7 @@
     </div>
 
     <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+    <span class="absolute top-2 left-2 bg-gradient-to-r from-red-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
       Featured
     </span>
   </div>
@@ -579,23 +600,27 @@
   <div class="p-4 text-left">
     <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
+      <h3 class="font-bold text-lg text-gray-800">Fitnes App UI/UX</h3>
       <span class="text-sm text-gray-500">2024</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">Fitnes tracking app dengan motivational design dan comprehensive workout planning features</p>
     <div class="flex flex-wrap gap-2 mt-3">
       <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Fitnes</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Health</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
-    </div>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">FitLive Indonesia</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
   </div>
 </div>
 
@@ -618,33 +643,33 @@
         </svg>
       </button>
     </div>
-
-    <!-- Label Featured -->
-    <span class="absolute top-2 left-2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-      Featured
-    </span>
   </div>
 
   <!-- Konten -->
   <div class="p-4 text-left">
-    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">UI/UX Design</span>
+    <span class="inline-block text-xs font-semibold text-purple-700 bg-purple-100 px-3 py-1 rounded-full mb-3">Web Development</span>
     <div class="flex justify-between items-center">
-      <h3 class="font-bold text-lg text-gray-800">E-Commerce Mobile App</h3>
-      <span class="text-sm text-gray-500">2024</span>
+      <h3 class="font-bold text-lg text-gray-800">E-Learning platform</h3>
+      <span class="text-sm text-gray-500">2023</span>
     </div>
-    <p class="text-sm text-gray-600 mt-2">Desain platform e-commerce dengan UX optimal dan conversion tinggi.</p>
+    <p class="text-sm text-gray-600 mt-2">E-learning platform dengan interactive course content dan comprehensive student management system</p>
     <div class="flex flex-wrap gap-2 mt-3">
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Mobile</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">E-commerce</span>
-      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">iOS</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Web</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">Education</span>
+      <span class="text-xs bg-gray-100 px-2 py-1 rounded-full">LMS</span>
     </div>
-    <div class="mt-4 text-sm text-gray-500">
-      Client: <span class="font-medium">ShopNow Indonesia</span>
-      <a href="#" class="inline-block ml-1 text-purple-500">
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h7m0 0v7m0-7L10 14" />
-        </svg>
-      </a>
+    <div class="mt-4 text-sm text-gray-500 flex items-center justify-between">
+  <div>
+    Client: <span class="font-medium">EduTech Indonesia</span>
+  </div>
+  <a href="#" class="text-purple-500 ml-2">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.2539 2H14.2539V6" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M6.92188 9.33333L14.2552 2" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.2539 8.66667V12.6667C12.2539 13.0203 12.1134 13.3594 11.8634 13.6095C11.6133 13.8595 11.2742 14 10.9206 14H3.58724C3.23362 14 2.89448 13.8595 2.64443 13.6095C2.39438 13.3594 2.25391 13.0203 2.25391 12.6667V5.33333C2.25391 4.97971 2.39438 4.64057 2.64443 4.39052C2.89448 4.14048 3.23362 4 3.58724 4H7.58724" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+</div>
     </div>
   </div>
 </div>
@@ -655,8 +680,8 @@
 
 <!-- CTA Gradient Atas -->
 <section class="bg-gradient-to-r from-purple-500 via-indigo-400 to-cyan-400 text-white text-center py-16 px-4">
-  <h2 class="text-3xl font-bold mb-3">Siap Berkolaborasi Dengan Kami?</h2>
-  <p class="mb-6 text-lg">Mari Wujudkan Visi Digital Anda dengan tim profesional Titik Visual </p>
+  <h2 class="text-3xl font-bold mb-3">Tertarik dengan layanan kami?</h2>
+  <p class="mb-6 text-lg">Mari diskusikan bagaimana kami bisa membantu mewujudkan visi digital anda </p>
 
   <div class="flex flex-col md:flex-row items-center justify-center gap-4">
     <!-- Tombol Mulai Diskusi -->
@@ -688,4 +713,3 @@
   </div>
 </section>
 @endsection
-

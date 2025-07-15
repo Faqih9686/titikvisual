@@ -6,7 +6,35 @@
 
 <!-- Hero Section -->
 <section class="text-center py-20 px-6 bg-gradient-to-b from-white to-green-50">
-    <span class="text-xs px-3 py-1 bg-purple-100 text-purple-600 rounded-full font-semibold mb-4 inline-block">💬 Get In Touch</span>
+    <span
+  class="text-xs px-3 py-1 bg-purple-100 text-purple-600 rounded-full font-semibold mb-4 inline-flex items-center gap-1 transition duration-300 ease-in-out cursor-pointer hover:bg-transparent hover:text-purple-800 hover:ring-1 hover:ring-purple-600 active:bg-purple-50"
+>
+  <svg
+    width="17"
+    height="17"
+    viewBox="0 0 17 17"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="transition duration-300"
+  >
+    <g clip-path="url(#clip0_332_2025)">
+      <path
+        d="M5.6638 14.1276C6.93619 14.7803 8.39986 14.9571 9.79106 14.6262C11.1823 14.2952 12.4095 13.4782 13.2516 12.3224C14.0938 11.1667 14.4954 9.74811 14.3842 8.32241C14.273 6.89671 13.6562 5.55762 12.645 4.54643C11.6338 3.53525 10.2947 2.91847 8.86903 2.80725C7.44333 2.69602 6.02478 3.09767 4.86902 3.9398C3.71325 4.78193 2.89626 6.00918 2.56528 7.40038C2.2343 8.79158 2.4111 10.2553 3.0638 11.5276L1.73047 15.461L5.6638 14.1276Z"
+        stroke="currentColor"
+        stroke-width="1.33333"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_332_2025">
+        <rect width="16" height="16" fill="white" transform="translate(0.398438 0.796875)" />
+      </clipPath>
+    </defs>
+  </svg>
+  Get In Touch
+</span>
+
     <h1 class="text-4xl font-extrabold mb-2">
         <span class="text-purple-600">Mari Diskusi</span><br>
         <span class="text-gray-900">Proyek Anda</span>
