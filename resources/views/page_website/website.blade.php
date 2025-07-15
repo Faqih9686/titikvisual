@@ -610,7 +610,7 @@ $paketUiux = [
           <img src="/images/web.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full border" />
           <div>
             <p class="font-semibold text-black">Budi Santoso</p>
-            <p class="text-sm text-gray-500">Product Manager at TechStart Indonesia</p>
+            <p class="text-sm text-gray-500">Marketing Direktor at PT. Maju Bersama</p>
           </div>
         </div>
       </div>
@@ -627,7 +627,7 @@ $paketUiux = [
           <img src="/images/web.png" alt="Ahmad Rizki" class="w-12 h-12 rounded-full border" />
           <div>
             <p class="font-semibold text-black">Sari dewi</p>
-            <p class="text-sm text-gray-500">CEO at Digital Commerce</p>
+            <p class="text-sm text-gray-500">Owner at Toko Online Fashionista</p>
           </div>
         </div>
       </div>
