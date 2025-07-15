@@ -20,4 +20,9 @@ class Portfolio extends Model
         'video_url',
         'is_featured'
     ];
+
+    public function category()
+{
+    return $this->belongsTo(Category::class);
+}
 }

@@ -19,12 +19,12 @@ class LandingPageController extends Controller
         return view('landing.index', [
             'services'     => Service::where('is_featured', true)->get(),
             'portfolios'   => Portfolio::with('category')->latest()->take(6)->get(),
-            'testimonials' => Testimoni::latest()->take(3)->get(),
+            'testimoni' => Testimoni::latest()->take(3)->get(),
             'faq' => Faq::all(),
         ]);
     }
 
-    public function portfolios(Request $request)
+    public function portofolio(Request $request)
     {
         $query = Portfolio::with('category')->latest();
 
@@ -37,7 +37,7 @@ class LandingPageController extends Controller
 
         $portfolios = $query->paginate(9);
 
-        return view('landing.portfolios', [
+        return view('portofolio.index', [
             'categories' => Category::all(),
             'portfolios' => $portfolios,
         ]);
@@ -75,7 +75,7 @@ class LandingPageController extends Controller
             'service' => $service,
             'packages'    => $service->packages,
             'portfolios'  => Portfolio::where('category_id', $service->category_id)->get(),
-            'testimonials' => Testimoni::inRandomOrder()->take(3)->get(),
+            'testimoni' => Testimoni::inRandomOrder()->take(3)->get(),
         ]);
     }
 

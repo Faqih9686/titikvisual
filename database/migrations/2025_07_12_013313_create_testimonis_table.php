@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('testimoni', function (Blueprint $table) {
+        Schema::create('testimonis', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('position')->nullable(); // contoh: CEO, Freelancer, dsb.
@@ -24,10 +24,10 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverse the migration s.
      */
     public function down(): void
     {
-        Schema::dropIfExists('testimoni');
+        Schema::dropIfExists('testimonis');
     }
 };

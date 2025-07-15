@@ -26,6 +26,9 @@ Route::get('/services/{slug}', [LandingPageController::class, 'serviceDetail'])-
 
 Route::get('/about', [LandingPageController::class, 'about'])->name('about');
 
+// portopolio
+Route::get('/portofolio', [LandingPageController::class, 'portofolio'])->name('portofolio.index');
+
 
 // page kontak
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');

@@ -20,8 +20,8 @@ return new class extends Migration
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('thumbnail')->nullable();
             $table->decimal('price', 12, 2)->nullable();
-            $table->json('features')->nullable(); // bisa simpan daftar fitur
-            $table->string('slug')->unique(); // untuk URL detail
+            $table->json('features')->nullable(); 
+            $table->string('slug')->unique(); 
             $table->timestamps();
         });
     }

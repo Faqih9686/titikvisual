@@ -12,6 +12,6 @@ class TestimoniSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        
     }
 }
