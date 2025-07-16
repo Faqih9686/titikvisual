@@ -20,15 +20,21 @@ Route::get('/services', [LandingPageController::class, 'services'])->name('servi
 Route::get('/portfolios', [LandingPageController::class, 'portfolios'])->name('portfolios');
 Route::get('/portfolios/{slug}', [LandingPageController::class, 'portfolioDetail'])->name('portfolio.detail');
 
+
 // page about/profile
 Route::get('/services', [LandingPageController::class, 'services'])->name('services');
 Route::get('/services/{slug}', [LandingPageController::class, 'serviceDetail'])->name('service.detail');
+Route::get('/about', [LandingPageController::class, 'about'])->name('about.profil');
 
-Route::get('/about', [LandingPageController::class, 'about'])->name('about');
 
 // portopolio
 Route::get('/portofolio', [LandingPageController::class, 'portofolio'])->name('portofolio.index');
 
 
 // page kontak
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.konsultasi');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');
+
+
+//layanan
+Route::get('/pagelayanan', [LandingPageController::class, 'layanan'])->name('pagelayanan.layanan');

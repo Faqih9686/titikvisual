@@ -52,12 +52,12 @@ class LandingPageController extends Controller
         return view('landing.portfolio-detail', compact('portfolio'));
     }
 
-    public function services()
+    public function profile()
     {
         $categories = Category::where('is_main', true)->get();
         $services = Service::with('category')->latest()->get();
 
-        return view('landing.services', compact('categories', 'services'));
+        return view('pagelayanan.Layanan', compact('categories', 'services'));
     }
 
     public function serviceDetail($slug)
@@ -81,8 +81,13 @@ class LandingPageController extends Controller
 
     public function about()
     {
-        return view('landing.about', [
+        return view('about.profil', [
             'teams' => Team::all(),
         ]);
+    }
+
+    public function layanan()
+    {
+        return view('pagelayanan.layanan');
     }
 }

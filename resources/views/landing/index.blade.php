@@ -43,7 +43,7 @@
     <!-- Tombol -->
     <div class="flex justify-center space-x-4">
  <!-- Tombol Lihat Portofolio -->
-  <a href="{{ route('portofolio') }}"
+  <a href="#"
      class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 inline-flex items-center space-x-2">
      
     <!-- SVG Icon -->

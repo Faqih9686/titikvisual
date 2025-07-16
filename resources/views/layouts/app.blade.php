@@ -44,11 +44,11 @@
       <!-- Navigasi -->
       <nav class="space-x-6 text-gray-700 font-medium hidden md:block">
         <a href="#" class="hover:text-blue-600 hover:underline transition duration-200">Home</a>
-        <a href="#" class="hover:text-blue-600 hover:underline transition duration-200">About</a>
+        <a href="{{ route('about.profil') }}" class="hover:text-blue-600 hover:underline transition duration-200">About</a>
         <a href="#" class="hover:text-blue-600 hover:underline transition duration-200">Services</a>
         <a href="{{ route('portofolio.index') }}" class="hover:text-blue-600 hover:underline transition duration-200">Portfolio</a>
         <a href="#" class="hover:text-blue-600 hover:underline transition duration-200">Careers</a>
-        <a href="#" class="hover:text-blue-600 hover:underline transition duration-200">Contact</a>
+        <a href="{{ route('contact.konsultasi') }}" class="hover:text-blue-600 hover:underline transition duration-200">Contact</a>
       </nav>
     </div>
   </header>
