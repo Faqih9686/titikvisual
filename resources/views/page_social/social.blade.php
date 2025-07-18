@@ -902,50 +902,7 @@
 </section>
 
 
-
-<!-- apa kata client kami -->
-<section class="py-12 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400 mb-2">Apa Kata Klien Kami</h2>
-    <p class="text-center text-gray-500 mb-10">Testimoni dari klien yang puas dengan sosial media management kami</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Testimoni 1 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "social media management dari ttik visual luar biasa! engagement kami meningkat 300% dan penjualan online naik drastis"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/youtub.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Lisa chen</p>
-            <p class="text-sm text-gray-500">Marketing Manajer at Boutique Fashion</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimoni 2 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "Tim sangat kreatif dalam membuat konten. Followers kami bertambah pesat dan customer baru terus berdatangan!"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/youtub.png" alt="Ahmad Rizki" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Andi Wijaya</p>
-            <p class="text-sm text-gray-500">Owner at Cafae Nusantara</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+@include('components.client')
 
 
 <!-- CTA Gradient Atas -->
