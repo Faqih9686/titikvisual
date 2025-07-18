@@ -77,88 +77,17 @@
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    
-      <!-- Card 1 -->
+      @foreach ($services as $service)
       <div class="border rounded-xl p-6 hover:shadow-xl transition duration-300 ease-in-out">
         <div class="bg-purple-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <!-- Ikon UI/UX -->
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.9998 28.5884C20.7497 28.8383 20.4106 28.9788 20.0571 28.9788C19.7035 28.9788 19.3645 28.8383 19.1144 28.5884L16.9998 26.4737C16.7498 26.2237 16.6094 25.8846 16.6094 25.531C16.6094 25.1775 16.7498 24.8384 16.9998 24.5884L24.4478 17.1404C24.6978 16.8904 25.0369 16.75 25.3904 16.75C25.744 16.75 26.0831 16.8904 26.3331 17.1404L28.4478 19.255C28.6977 19.5051 28.8381 19.8442 28.8381 20.1977C28.8381 20.5513 28.6977 20.8903 28.4478 21.1404L20.9998 28.5884Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M24.0599 17.526L22.2266 8.36072C22.1767 8.11136 22.0566 7.88146 21.8803 7.69813C21.7041 7.51481 21.4791 7.3857 21.2319 7.32605L4.37324 2.89672C4.15114 2.84302 3.91897 2.8473 3.69901 2.90914C3.47904 2.97099 3.27866 3.08833 3.11709 3.2499C2.95552 3.41147 2.83818 3.61185 2.77633 3.83182C2.71449 4.05178 2.71021 4.28395 2.7639 4.50605L7.19324 21.3647C7.25289 21.6119 7.38199 21.8369 7.56532 22.0131C7.74864 22.1894 7.97854 22.3095 8.2279 22.3594L17.3932 24.1927" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.125 3.26562L12.8397 12.9803" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.7253 17.5286C16.198 17.5286 17.3919 16.3347 17.3919 14.862C17.3919 13.3892 16.198 12.1953 14.7253 12.1953C13.2525 12.1953 12.0586 13.3892 12.0586 14.862C12.0586 16.3347 13.2525 17.5286 14.7253 17.5286Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
           </svg>
         </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">UI/UX Design</h3>
-        <p class="text-sm text-gray-500">Desain interface yang user-friendly dan menarik untuk aplikasi dan website</p>
+        <h3 class="font-bold text-lg text-gray-800 mb-2">{{ $service->name }}</h3>
+        <p class="text-sm text-gray-500">{{ $service->description }}</p>
       </div>
-
-      <!-- Card 2 -->
-      <div class="border rounded-xl p-6 hover:shadow-lg transition">
-        <div class="bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.388 29.526C23.7518 29.526 29.7214 23.5565 29.7214 16.1927C29.7214 8.82891 23.7518 2.85938 16.388 2.85938C9.02422 2.85938 3.05469 8.82891 3.05469 16.1927C3.05469 23.5565 9.02422 29.526 16.388 29.526Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.388 2.85938C12.9643 6.45425 11.0547 11.2284 11.0547 16.1927C11.0547 21.1571 12.9643 25.9312 16.388 29.526C19.8117 25.9312 21.7214 21.1571 21.7214 16.1927C21.7214 11.2284 19.8117 6.45425 16.388 2.85938Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.05469 16.1953H29.7214" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Website Development</h3>
-        <p class="text-sm text-gray-500">Website responsif dan modern untuk bisnis Anda</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="border rounded-xl p-6 hover:shadow-lg transition">
-        <div class="bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.9674 20.8597C13.8483 20.3983 13.6078 19.9772 13.2708 19.6402C12.9339 19.3033 12.5128 19.0627 12.0514 18.9437L3.87135 16.8344C3.73179 16.7948 3.60896 16.7107 3.5215 16.595C3.43404 16.4792 3.38672 16.3381 3.38672 16.193C3.38672 16.048 3.43404 15.9069 3.5215 15.7911C3.60896 15.6754 3.73179 15.5913 3.87135 15.5517L12.0514 13.441C12.5126 13.3221 12.9336 13.0818 13.2706 12.7451C13.6075 12.4084 13.8481 11.9876 13.9674 11.5264L16.0767 3.34637C16.1159 3.20627 16.1999 3.08283 16.3158 2.9949C16.4317 2.90697 16.5732 2.85938 16.7187 2.85938C16.8642 2.85938 17.0057 2.90697 17.1216 2.9949C17.2375 3.08283 17.3215 3.20627 17.3607 3.34637L19.4687 11.5264C19.5877 11.9878 19.8282 12.4089 20.1652 12.7459C20.5022 13.0828 20.9233 13.3233 21.3847 13.4424L29.5647 15.5504C29.7054 15.5892 29.8294 15.6731 29.9178 15.7891C30.0062 15.9052 30.0541 16.0471 30.0541 16.193C30.0541 16.339 30.0062 16.4808 29.9178 16.5969C29.8294 16.713 29.7054 16.7969 29.5647 16.8357L21.3847 18.9437C20.9233 19.0627 20.5022 19.3033 20.1652 19.6402C19.8282 19.9772 19.5877 20.3983 19.4687 20.8597L17.3594 29.0397C17.3201 29.1798 17.2362 29.3033 17.1203 29.3912C17.0043 29.4791 16.8628 29.5267 16.7174 29.5267C16.5719 29.5267 16.4304 29.4791 16.3144 29.3912C16.1985 29.3033 16.1146 29.1798 16.0754 29.0397L13.9674 20.8597Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M27.3867 4.19531V9.52865" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M30.0521 6.85938H24.7188" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6.05078 22.8594V25.526" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Custom Merchandise</h3>
-        <p class="text-sm text-gray-500">Payung, tumbler, totebag, dan merchandise custom berkualitas</p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="border rounded-xl p-6 hover:shadow-lg transition">
-        <div class="bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.6943 17.4844L22.7143 28.8524C22.7369 28.9862 22.7181 29.1238 22.6604 29.2467C22.6028 29.3696 22.5089 29.472 22.3915 29.5401C22.2741 29.6082 22.1387 29.6389 22.0033 29.628C21.868 29.6171 21.7392 29.5651 21.6343 29.479L16.8609 25.8964C16.6305 25.7242 16.3506 25.6312 16.0629 25.6312C15.7753 25.6312 15.4954 25.7242 15.2649 25.8964L10.4836 29.4777C10.3787 29.5636 10.2501 29.6155 10.1149 29.6264C9.97977 29.6374 9.84449 29.6068 9.72715 29.5389C9.6098 29.4709 9.51596 29.3688 9.45815 29.2462C9.40034 29.1235 9.38131 28.9861 9.4036 28.8524L11.4223 17.4844" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.0586 18.9609C20.4769 18.9609 24.0586 15.3792 24.0586 10.9609C24.0586 6.54266 20.4769 2.96094 16.0586 2.96094C11.6403 2.96094 8.05859 6.54266 8.05859 10.9609C8.05859 15.3792 11.6403 18.9609 16.0586 18.9609Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Corporate Gifts</h3>
-        <p class="text-sm text-gray-500">Paket seminar kit, powerbank, flashdisk untuk kebutuhan corporate</p>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="border rounded-xl p-6 hover:shadow-lg transition">
-        <div class="bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.388 29.6276C23.7518 29.6276 29.7214 23.6581 29.7214 16.2943C29.7214 8.93047 23.7518 2.96094 16.388 2.96094C9.02422 2.96094 3.05469 8.93047 3.05469 16.2943C3.05469 23.6581 9.02422 29.6276 16.388 29.6276Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.3867 24.2969C20.805 24.2969 24.3867 20.7152 24.3867 16.2969C24.3867 11.8786 20.805 8.29688 16.3867 8.29688C11.9684 8.29688 8.38672 11.8786 8.38672 16.2969C8.38672 20.7152 11.9684 24.2969 16.3867 24.2969Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.3854 18.9661C17.8582 18.9661 19.0521 17.7722 19.0521 16.2995C19.0521 14.8267 17.8582 13.6328 16.3854 13.6328C14.9127 13.6328 13.7188 14.8267 13.7188 16.2995C13.7188 17.7722 14.9127 18.9661 16.3854 18.9661Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Drinkware Collection</h3>
-        <p class="text-sm text-gray-500">Botol minum, tumbler, mug, gelas kaca, dan drink jar custom</p>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="border rounded-xl p-6 hover:shadow-lg transition">
-        <div class="bg-green-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
-          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.0534 28.2969V25.6302C22.0534 24.2157 21.4915 22.8592 20.4913 21.859C19.4911 20.8588 18.1345 20.2969 16.7201 20.2969H8.72005C7.30556 20.2969 5.94901 20.8588 4.94882 21.859C3.94862 22.8592 3.38672 24.2157 3.38672 25.6302V28.2969" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12.7201 14.9635C15.6656 14.9635 18.0534 12.5757 18.0534 9.63021C18.0534 6.68469 15.6656 4.29688 12.7201 4.29688C9.77453 4.29688 7.38672 6.68469 7.38672 9.63021C7.38672 12.5757 9.77453 14.9635 12.7201 14.9635Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M30.0508 28.2954V25.6288C30.0499 24.4471 29.6566 23.2991 28.9326 22.3652C28.2086 21.4312 27.195 20.7642 26.0508 20.4688" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M22.0508 4.46875C23.198 4.76248 24.2148 5.42968 24.941 6.36516C25.6671 7.30064 26.0612 8.45119 26.0612 9.63542C26.0612 10.8196 25.6671 11.9702 24.941 12.9057C24.2148 13.8411 23.198 14.5083 22.0508 14.8021" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Logo & Brand Identity</h3>
-        <p class="text-sm text-gray-500">Logo design dan brand identity package lengkap</p>
-      </div>
-
+      @endforeach
     </div>
   </div>
 </section>
