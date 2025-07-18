@@ -18,9 +18,15 @@ class PackageSeeder extends Seeder
 
         if (!$service) {
             $service = Service::create([
-                'title' => 'UI/UX Design',
+                'name' => 'UI/UX Design',
                 'slug'  => 'ui-ux-design',
                 'description' => 'Layanan desain UI/UX profesional untuk kebutuhan digital Anda.',
+                'ikon' => 'fa-solid fa-pen', // opsional
+                'is_featured' => true,
+                'category_id' => 1, // ✅ kategori default
+                'thumbnail' => 'service1.jpg',
+                'price' => 7500000,
+                'features' => json_encode(['Desain responsif', 'Kontak Form', 'Portofolio']),
             ]);
         }
 
