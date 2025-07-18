@@ -175,221 +175,55 @@
     </p>
 
     <!-- Judul Digital Creative Services -->
-<h3 class="text-3xl font-extrabold mb-10 text-left">
-  <span class="text-blue-700">Digital Creative </span>
-  <span class="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">Services</span>
-</h3>
-
+    <h3 class="text-3xl font-extrabold mb-10 text-left">
+      <span class="text-blue-700">Digital Creative </span>
+      <span class="bg-gradient-to-r from-blue-500 to-pink-500 text-transparent bg-clip-text">Services</span>
+    </h3>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-      <!-- Keunggulan 1 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="24" height="24" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.9998 28.5884C20.7497 28.8383 20.4106 28.9788 20.0571 28.9788C19.7035 28.9788 19.3645 28.8383 19.1144 28.5884L16.9998 26.4737C16.7498 26.2237 16.6094 25.8846 16.6094 25.531C16.6094 25.1775 16.7498 24.8384 16.9998 24.5884L24.4478 17.1404C24.6978 16.8904 25.0369 16.75 25.3904 16.75C25.744 16.75 26.0831 16.8904 26.3331 17.1404L28.4478 19.255C28.6977 19.5051 28.8381 19.8442 28.8381 20.1977C28.8381 20.5513 28.6977 20.8903 28.4478 21.1404L20.9998 28.5884Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M24.0599 17.526L22.2266 8.36072C22.1767 8.11136 22.0566 7.88146 21.8803 7.69813C21.7041 7.51481 21.4791 7.3857 21.2319 7.32605L4.37324 2.89672C4.15114 2.84302 3.91897 2.8473 3.69901 2.90914C3.47904 2.97099 3.27866 3.08833 3.11709 3.2499C2.95552 3.41147 2.83818 3.61185 2.77633 3.83182C2.71449 4.05178 2.71021 4.28395 2.7639 4.50605L7.19324 21.3647C7.25289 21.6119 7.38199 21.8369 7.56532 22.0131C7.74864 22.1894 7.97854 22.3095 8.2279 22.3594L17.3932 24.1927" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.125 3.26562L12.8397 12.9803" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.7253 17.5286C16.198 17.5286 17.3919 16.3347 17.3919 14.862C17.3919 13.3892 16.198 12.1953 14.7253 12.1953C13.2525 12.1953 12.0586 13.3892 12.0586 14.862C12.0586 16.3347 13.2525 17.5286 14.7253 17.5286Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+      @foreach ($services as $service)
+        <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
+          <!-- Kiri: Ikon dan Teks -->
+          <div class="flex gap-4">
+            <!-- Ikon -->
+            <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
+              {{-- Bisa diganti jadi SVG dinamis dari DB jika tersedia --}}
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
+                <path d="M12 2l9 5-9 5-9-5 9-5z" />
+                <path d="M12 22V12" />
+              </svg>
+            </div>
+
+            <!-- Teks -->
+            <div>
+              <h3 class="text-base font-bold text-gray-900">{{ $service->title }}</h3>
+              <p class="text-sm text-gray-600">{{ $service->short_description ?? 'Deskripsi belum tersedia.' }}</p>
+              <p class="text-sm text-purple-600 mt-2 font-semibold">
+                Mulai Rp {{ number_format($service->price_min ?? 0, 0, ',', '.') }}
+              </p>
+            </div>
+          </div>
+
+          <!-- Label Populer -->
+          @if ($service->is_featured)
+            <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+              Populer
+            </span>
+          @endif
+
+          <!-- Ikon panah -->
+          <div class="absolute bottom-4 right-4 text-purple-600">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333"
+                stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA"
+                stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      @endforeach
     </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
- 
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-
-      <!-- Keunggulan 2 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="24" height="24" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.388 29.526C23.7518 29.526 29.7214 23.5565 29.7214 16.1927C29.7214 8.82891 23.7518 2.85938 16.388 2.85938C9.02422 2.85938 3.05469 8.82891 3.05469 16.1927C3.05469 23.5565 9.02422 29.526 16.388 29.526Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16.388 2.85938C12.9643 6.45425 11.0547 11.2284 11.0547 16.1927C11.0547 21.1571 12.9643 25.9312 16.388 29.526C19.8117 25.9312 21.7214 21.1571 21.7214 16.1927C21.7214 11.2284 19.8117 6.45425 16.388 2.85938Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M3.05469 16.1953H29.7214" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-    </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
-
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-
-      <!-- Keunggulan 3 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M17.5273 2.39844H7.52734C6.42277 2.39844 5.52734 3.29387 5.52734 4.39844V20.3984C5.52734 21.503 6.42277 22.3984 7.52734 22.3984H17.5273C18.6319 22.3984 19.5273 21.503 19.5273 20.3984V4.39844C19.5273 3.29387 18.6319 2.39844 17.5273 2.39844Z" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12.5273 18.3984H12.5373" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
-
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-   <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-
-      <!-- Keunggulan 4 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="24" height="24" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.9674 20.8597C13.8483 20.3983 13.6078 19.9772 13.2708 19.6402C12.9339 19.3033 12.5128 19.0627 12.0514 18.9437L3.87135 16.8344C3.73179 16.7948 3.60896 16.7107 3.5215 16.595C3.43404 16.4792 3.38672 16.3381 3.38672 16.193C3.38672 16.048 3.43404 15.9069 3.5215 15.7911C3.60896 15.6754 3.73179 15.5913 3.87135 15.5517L12.0514 13.441C12.5126 13.3221 12.9336 13.0818 13.2706 12.7451C13.6075 12.4084 13.8481 11.9876 13.9674 11.5264L16.0767 3.34637C16.1159 3.20627 16.1999 3.08283 16.3158 2.9949C16.4317 2.90697 16.5732 2.85938 16.7187 2.85938C16.8642 2.85938 17.0057 2.90697 17.1216 2.9949C17.2375 3.08283 17.3215 3.20627 17.3607 3.34637L19.4687 11.5264C19.5877 11.9878 19.8282 12.4089 20.1652 12.7459C20.5022 13.0828 20.9233 13.3233 21.3847 13.4424L29.5647 15.5504C29.7054 15.5892 29.8294 15.6731 29.9178 15.7891C30.0062 15.9052 30.0541 16.0471 30.0541 16.193C30.0541 16.339 30.0062 16.4808 29.9178 16.5969C29.8294 16.713 29.7054 16.7969 29.5647 16.8357L21.3847 18.9437C20.9233 19.0627 20.5022 19.3033 20.1652 19.6402C19.8282 19.9772 19.5877 20.3983 19.4687 20.8597L17.3594 29.0397C17.3201 29.1798 17.2362 29.3033 17.1203 29.3912C17.0043 29.4791 16.8628 29.5267 16.7174 29.5267C16.5719 29.5267 16.4304 29.4791 16.3144 29.3912C16.1985 29.3033 16.1146 29.1798 16.0754 29.0397L13.9674 20.8597Z" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M27.3867 4.19531V9.52865" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M30.0521 6.85938H24.7188" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6.05078 22.8594V25.526" stroke="#9333EA" stroke-width="2.93333" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-    </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
-
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-
-      <!-- keunggulan 5 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22.8594 7L14.3594 15.5L9.35938 10.5L2.85938 17" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M16.8594 7H22.8594V13" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
-
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-
-      <!-- Keunggulan 6 -->
-      <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-lg transition duration-300 relative flex items-start justify-between">
-  <!-- Kiri: Ikon dan Teks -->
-  <div class="flex gap-4">
-    <!-- Ikon -->
-    <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 text-2xl rounded-xl">
-      <svg width="24" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.52734 11L21.5273 6V18L3.52734 14V11Z" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M12.1271 16.7953C12.022 17.1761 11.843 17.5326 11.6002 17.8442C11.3574 18.1558 11.0556 18.4166 10.712 18.6116C10.3684 18.8066 9.9898 18.932 9.59775 18.9807C9.2057 19.0294 8.80791 19.0004 8.42707 18.8953C8.04624 18.7903 7.68983 18.6112 7.37819 18.3684C7.06655 18.1256 6.80578 17.8238 6.61078 17.4802C6.41577 17.1367 6.29035 16.758 6.24167 16.366C6.193 15.9739 6.22201 15.5761 6.32707 15.1953" stroke="#9333EA" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-
-    <!-- Teks -->
-    <div>
-      <h3 class="text-base font-bold text-gray-900">UI/UX Design</h3>
-      <p class="text-sm text-gray-600">Desain interface yang user-friendly dan menarik</p>
-      <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
-    </div>
-  </div>
-
-  <!-- Label Populer -->
-  <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
-    Populer
-  </span>
-
-  <!-- Ikon panah -->
-  <div class="absolute bottom-4 right-4 text-purple-600">
-    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4.25 8H13.5833" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M8.91797 3.33594L13.5846 8.0026L8.91797 12.6693" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
   </div>
 </section>
 
@@ -701,88 +535,86 @@
     <!-- Portfolio Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
-      <!-- CARD -->
-      @foreach ([[
-  'gradient' => 'from-red-300 to-pink-200',
-  'title' => 'Social Media Management',
-  'client' => 'Fashion Brand Indonesia',
-  'tagline' => 'Digital Marketing by Titik Visual',
-  'desc' => 'Pengelolaan social media lengkap dengan content creation, posting schedule, dan analytics reporting.',
-], [
-  'gradient' => 'from-purple-400 to-indigo-300',
-  'title' => 'Custom Branding Campaign',
-  'client' => 'Startup Lokal',
-  'tagline' => 'Brand Identity Project',
-  'desc' => 'Strategi branding menyeluruh, termasuk logo, tone of voice, dan media campaign.',
-], [
-  'gradient' => 'from-green-400 to-green-200',
-  'title' => 'TVC & Motion Campaign',
-  'client' => 'Agro Tech Group',
-  'tagline' => 'Creative Video by Titik Visual',
-  'desc' => 'Pembuatan video promosi berdurasi pendek untuk TV dan social media.',
-]] as $card)
-      <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden border">
-        <!-- Thumbnail -->
-        <div class="relative h-52 bg-gradient-to-br {{ $card['gradient'] }} flex items-center justify-center">
-          
-          <!-- Ikon <> kiri atas -->
-          <svg class="absolute top-2 left-2 w-6 h-6 text-white opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-          </svg>
+@php
+  $gradients = [
+    'from-red-300 to-pink-200',
+    'from-purple-400 to-indigo-300',
+    'from-green-400 to-green-200',
+    'from-yellow-300 to-orange-200',
+    'from-blue-400 to-cyan-300',
+    'from-pink-400 to-red-200'
+  ];
+@endphp
 
-          <!-- Tahun -->
-          <span class="absolute top-2 right-2 bg-white text-xs font-semibold px-3 py-0.5 rounded-full shadow text-gray-700">2024</span>
-          
-          <!-- Ikon Play -->
-          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-5.197-3.027A1 1 0 008 9.027v5.946a1 1 0 001.555.832l5.197-3.027a1 1 0 000-1.66z" />
-          </svg>
-        </div>
+@foreach ($portfolios->take(3) as $portfolio)
+  <div class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden border">
+    
+    <!-- Thumbnail -->
+    <div class="relative h-52 bg-gradient-to-br {{ $gradients[$loop->index % count($gradients)] }} flex items-center justify-center">
+      
+      <!-- Ikon Panah Ganda Kiri -->
+      <svg class="absolute top-2 left-2 w-6 h-6 text-white opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+      </svg>
 
-        <!-- Konten -->
-<div class="p-4 text-left space-y-2">
-  <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
-    {{ $card['tagline'] }}
-  </span>
-  <h3 class="font-bold text-lg text-gray-800">{{ $card['title'] }}</h3>
-  <p class="text-sm text-gray-600">
-    {{ $card['desc'] }}
-  </p>
-          <div class="flex items-center justify-between pt-2">
-            <p class="text-sm text-gray-500">Client: {{ $card['client'] }}</p>
-            <a href="#" class="text-indigo-500 hover:text-indigo-600">
-              <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.5977 2.89844H14.5977V6.89844" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M7.26562 10.2318L14.599 2.89844" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M12.5977 9.5651V13.5651C12.5977 13.9187 12.4572 14.2579 12.2071 14.5079C11.9571 14.758 11.6179 14.8984 11.2643 14.8984H3.93099C3.57737 14.8984 3.23823 14.758 2.98818 14.5079C2.73813 14.2579 2.59766 13.9187 2.59766 13.5651V6.23177C2.59766 5.87815 2.73813 5.53901 2.98818 5.28896C3.23823 5.03891 3.57737 4.89844 3.93099 4.89844H7.93099" stroke="#9333EA" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      @endforeach
+      <!-- Tahun -->
+      <span class="absolute top-2 right-2 bg-white text-xs font-semibold px-3 py-0.5 rounded-full shadow text-gray-700">
+        {{ \Carbon\Carbon::parse($portfolio->created_at)->format('Y') }}
+      </span>
 
+      <!-- Ikon Play -->
+      <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-5.197-3.027A1 1 0 008 9.027v5.946a1 1 0 001.555.832l5.197-3.027a1 1 0 000-1.66z" />
+      </svg>
     </div>
 
-    <!-- Tombol -->
-    <div class="mt-10 text-center">
-      <a href="#" class="inline-flex items-center gap-2 text-purple-600 font-semibold border border-purple-500 px-5 py-2 rounded-full hover:bg-purple-50 transition">
-        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_176_1600)">
-          <path d="M2.23047 8.0026C2.23047 8.0026 4.23047 3.33594 8.89714 3.33594C13.5638 3.33594 15.5638 8.0026 15.5638 8.0026C15.5638 8.0026 13.5638 12.6693 8.89714 12.6693C4.23047 12.6693 2.23047 8.0026 2.23047 8.0026Z" stroke="#7E22CE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M8.89844 10C10.003 10 10.8984 9.10457 10.8984 8C10.8984 6.89543 10.003 6 8.89844 6C7.79387 6 6.89844 6.89543 6.89844 8C6.89844 9.10457 7.79387 10 8.89844 10Z" stroke="#7E22CE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-          </g>
-          <defs>
-            <clipPath id="clip0_176_1600">
-              <rect width="16" height="16" fill="white" transform="translate(0.898438)"/>
-              </clipPath>
-          </defs>
-        </svg>
-        Lihat Semua Layanan Titik Visual
-      </a>
+    <!-- Konten -->
+    <div class="p-4 text-left space-y-2">
+      <!-- Kategori -->
+      <span class="inline-block bg-gray-100 text-gray-600 text-xs font-semibold px-3 py-1 rounded-full">
+        {{ $portfolio->category->name ?? 'Tanpa Kategori' }}
+      </span>
+
+      <!-- Judul -->
+      <h3 class="font-bold text-lg text-gray-800">{{ $portfolio->title }}</h3>
+
+      <!-- Deskripsi -->
+      <p class="text-sm text-gray-600">{{ $portfolio->description }}</p>
+
+      <!-- Info Bawah -->
+      <div class="flex items-center justify-between pt-2">
+        <p class="text-sm text-gray-500">Client: {{ $portfolio->client ?? '-' }}</p>
+        <a href="{{ route('portfolio.detail', $portfolio->slug) }}" class="text-indigo-500 hover:text-indigo-600">
+          <svg width="17" height="17" fill="none" stroke="#9333EA" stroke-width="1.3" viewBox="0 0 17 17">
+            <path d="M10.5977 2.89844H14.5977V6.89844" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.26562 10.2318L14.599 2.89844" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5977 9.5651V13.5651C12.5977 13.9187 12.4572 14.2579 12.2071 14.5079C11.9571 14.758 11.6179 14.8984 11.2643 14.8984H3.93099C3.57737 14.8984 3.23823 14.758 2.98818 14.5079C2.73813 14.2579 2.59766 13.9187 2.59766 13.5651V6.23177C2.59766 5.87815 2.73813 5.53901 2.98818 5.28896C3.23823 5.03891 3.57737 4.89844 3.93099 4.89844H7.93099" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
+@endforeach
 </section>
+
+ <!-- Tombol -->
+<div class="mt-10 text-center">
+  <a href="#" class="inline-flex items-center gap-2 text-purple-600 font-semibold border border-purple-500 px-5 py-2 rounded-full hover:bg-purple-50 transition">
+    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_176_1600)">
+        <path d="M2.23047 8.0026C2.23047 8.0026 4.23047 3.33594 8.89714 3.33594C13.5638 3.33594 15.5638 8.0026 15.5638 8.0026C15.5638 8.0026 13.5638 12.6693 8.89714 12.6693C4.23047 12.6693 2.23047 8.0026 2.23047 8.0026Z" stroke="#7E22CE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8.89844 10C10.003 10 10.8984 9.10457 10.8984 8C10.8984 6.89543 10.003 6 8.89844 6C7.79387 6 6.89844 6.89543 6.89844 8C6.89844 9.10457 7.79387 10 8.89844 10Z" stroke="#7E22CE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_176_1600">
+          <rect width="16" height="16" fill="white" transform="translate(0.898438)"/>
+        </clipPath>
+      </defs>
+    </svg>
+    Lihat Semua Layanan Titik Visual
+  </a>
+</div>
+</div>
 
 <!-- Section: Join Team -->
 <section class="pt-20 pb-24 bg-gray-50">
