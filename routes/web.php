@@ -38,3 +38,4 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.subm
 
 //layanan
 Route::get('/pagelayanan', [LandingPageController::class, 'layanan'])->name('pagelayanan.layanan');
+

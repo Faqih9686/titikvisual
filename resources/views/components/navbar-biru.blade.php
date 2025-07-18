@@ -47,10 +47,8 @@
         </svg>
       </a>
     </div>
-
   </div>
 </div>
-
 
 <!-- NAVBAR -->
 <header class="bg-gradient-to-r from-purple-500 via-blue-400 to-cyan-400">
@@ -77,7 +75,7 @@
     <!-- Menu -->
     <nav class="space-x-6 text-white font-medium hidden md:block">
       <a href="/" class="hover:text-yellow-300 transition duration-200">Home</a>
-      <a href="#" class="hover:text-yellow-300 transition duration-200">Profil</a>
+      <a href="{{ route('about.profil') }}" class="hover:text-yellow-300 transition duration-200">Profil</a>
       <a href="{{ route('pagelayanan.layanan') }}" class="hover:text-yellow-300 transition duration-200">Layanan</a>
       <a href="{{ route('portofolio.index') }}" class="hover:text-yellow-300 transition duration-200">Portfolio</a>
       <a href="{{ route('contact.konsultasi') }}" class="hover:text-yellow-300 transition duration-200">Kontak</a>

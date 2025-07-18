@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->text('description')->nullable();
-            $table->string('icon')->nullable();
+            $table->string('nama');
+            $table->text('deskripsi')->nullable();
+            $table->string('ikon')->nullable();
             $table->boolean('is_featured')->default(false);
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('thumbnail')->nullable();
-            $table->decimal('price', 12, 2)->nullable();
+            $table->decimal('harga', 12, 2)->nullable();
             $table->json('features')->nullable(); 
             $table->string('slug')->unique(); 
             $table->timestamps();

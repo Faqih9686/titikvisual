@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('position')->nullable();
+            $table->string('nama');
+            $table->string('posisi')->nullable();
             $table->text('bio')->nullable();
             $table->string('photo')->nullable();
-            $table->string('linkedin')->nullable();
+            $table->string('keahlian')->nullable();
             $table->timestamps();
         });
         

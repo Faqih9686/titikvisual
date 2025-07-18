@@ -43,7 +43,7 @@
     <!-- Tombol -->
     <div class="flex justify-center space-x-4">
  <!-- Tombol Lihat Portofolio -->
-  <a href="#"
+  <a href="{{ route('portofolio.index') }}"
      class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 inline-flex items-center space-x-2">
      
     <!-- SVG Icon -->
@@ -57,7 +57,7 @@
     <span>Lihat Portofolio</span>
   </a>
 
-      <a href="#"
+      <a href="{{ route('contact.konsultasi') }}"
    class="border border-gray-300 px-5 py-2 rounded-full font-medium text-gray-700 hover:bg-gray-100 inline-flex items-center space-x-2">
   <span>💬</span>
   <span>Konsultasi Gratis</span>
@@ -77,7 +77,7 @@
     </p>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      
+    
       <!-- Card 1 -->
       <div class="border rounded-xl p-6 hover:shadow-xl transition duration-300 ease-in-out">
         <div class="bg-purple-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -203,7 +203,7 @@
       <p class="text-sm text-purple-600 mt-2 font-semibold">Mulai Rp 2.5jt</p>
     </div>
   </div>
-
+ 
   <!-- Label Populer -->
   <span class="absolute top-4 right-4 bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
     Populer

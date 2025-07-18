@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string('title');
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('thumbnail')->nullable(); // gambar preview
-            $table->text('description')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->string('slug')->unique();
             $table->string('video_url')->nullable(); // jika ada link YouTube/vimeo
             $table->string('client')->nullable();
-            $table->string('year')->nullable();
+            $table->string('tahun')->nullable();
             $table->boolean('is_featured')->default(false);
             $table->timestamps();
         });

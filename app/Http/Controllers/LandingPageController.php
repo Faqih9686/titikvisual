@@ -19,7 +19,7 @@ class LandingPageController extends Controller
         return view('landing.index', [
             'services'     => Service::where('is_featured', true)->get(),
             'portfolios'   => Portfolio::with('category')->latest()->take(6)->get(),
-            'testimoni' => Testimoni::latest()->take(3)->get(),
+            'testimonis' => Testimoni::latest()->take(3)->get(),
             'faq' => Faq::all(),
         ]);
     }
@@ -52,12 +52,12 @@ class LandingPageController extends Controller
         return view('landing.portfolio-detail', compact('portfolio'));
     }
 
-    public function profile()
+    public function layanan()
     {
         $categories = Category::where('is_main', true)->get();
         $services = Service::with('category')->latest()->get();
 
-        return view('pagelayanan.Layanan', compact('categories', 'services'));
+        return view('pagelayanan.layanan', compact('categories', 'services'));
     }
 
     public function serviceDetail($slug)
@@ -84,10 +84,5 @@ class LandingPageController extends Controller
         return view('about.profil', [
             'teams' => Team::all(),
         ]);
-    }
-
-    public function layanan()
-    {
-        return view('pagelayanan.layanan');
     }
 }
