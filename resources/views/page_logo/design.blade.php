@@ -539,49 +539,7 @@ $paketUiux = [
 </section>
 
 
-<!-- apa kata client kami -->
-<section class="py-12 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500 mb-2">Apa Kata Klien Kami</h2>
-    <p class="text-center text-gray-500 mb-10">Testimoni dari klien yang puas dengan layanan UI/UX Design kami</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Testimoni 1 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "Website yang dibuat Titik Visual sangat profesional dan user-friendly. Traffic website kami meningkat 200% setelah redesign!"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/brand.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Ahmad Rizki</p>
-            <p class="text-sm text-gray-500">Founder at Startup Hub Jakarta</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimoni 2 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "E-commerce platform yang dibuat sangat membantu bisnis online kami. Penjualan meningkat drastis!"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/brand.png" alt="Ahmad Rizki" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Maya Sari</p>
-            <p class="text-sm text-gray-500">Owner at Boutique fashion</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+@include('components.client')
 
 
 <!-- CTA Gradient Atas -->

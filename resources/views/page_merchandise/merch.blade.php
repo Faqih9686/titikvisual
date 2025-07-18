@@ -1754,49 +1754,7 @@
   </div>
 </section>
 
-<!-- apa kata client kami -->
-<section class="py-12 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center text-purple-700 mb-2">Apa Kata Klien Kami</h2>
-    <p class="text-center text-gray-500 mb-10">Testimoni dari klien yang puas dengan layanan UI/UX Design kami</p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Testimoni 1 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "Tim Titik Visual berhasil menciptakan UI/UX yang luar biasa untuk aplikasi kami. User engagement meningkat 40% setelah redesign!"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/ui.png" alt="Sarah Johnson" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Sarah Johnson</p>
-            <p class="text-sm text-gray-500">Product Manager at TechStart Indonesia</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimoni 2 -->
-      <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
-        <div class="flex items-center mb-4 text-yellow-400">
-          <span class="text-xl">★★★★★</span>
-        </div>
-        <p class="text-gray-700 mb-6">
-          "Proses kerja yang sangat profesional dan hasil yang melampaui ekspektasi. Highly recommended!"
-        </p>
-        <div class="flex items-center gap-4">
-          <img src="/images/ui.png" alt="Ahmad Rizki" class="w-12 h-12 rounded-full border" />
-          <div>
-            <p class="font-semibold text-black">Ahmad Rizki</p>
-            <p class="text-sm text-gray-500">CEO at Digital Commerce</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+@include('components.client')
 
 <!-- CTA Gradient Atas -->
 <section class="bg-gradient-to-r from-green-500 via-green-400 to-green-500 text-white text-center py-16 px-4">
