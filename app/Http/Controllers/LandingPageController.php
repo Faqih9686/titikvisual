@@ -60,7 +60,7 @@ class LandingPageController extends Controller
         return view('pagelayanan.layanan', compact('categories', 'services'));
     }
 
-    public function serviceDetail($slug)
+    public function detaillayanan($slug)
     {
         $service = Service::with(['packages'])
             ->where('slug', $slug)
@@ -71,7 +71,7 @@ class LandingPageController extends Controller
 
         $testimonials = Testimoni::inRandomOrder()->take(3)->get();
 
-        return view('landing.service-detail', [
+        return view('page_detaillayanan.detail', [
             'service' => $service,
             'packages'    => $service->packages,
             'portfolios'  => Portfolio::where('category_id', $service->category_id)->get(),

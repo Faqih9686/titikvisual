@@ -23,7 +23,7 @@ class TeamResource extends Resource
     {
         return $form
             ->schema([
-                //
+                
             ]);
     }
 

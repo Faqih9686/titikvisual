@@ -36,6 +36,6 @@ Route::get('/contact', [ContactController::class, 'index'])->name('contact.konsu
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.submit');
 
 
-//layanan
+//layanan & detail
 Route::get('/pagelayanan', [LandingPageController::class, 'layanan'])->name('pagelayanan.layanan');
-
+Route::get('/page_detaillayanan/{slug}', [LandingPageController::class, 'detaillayanan'])->name('page_detaillayanan.detail');

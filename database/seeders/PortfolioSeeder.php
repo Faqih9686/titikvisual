@@ -13,6 +13,7 @@ class PortfolioSeeder extends Seeder
     /**
      * Run the database seeds.
      */
+    
     public function run(): void
     {
         $categories = Category::all();
