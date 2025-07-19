@@ -311,74 +311,28 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <!-- Ahmad Rizki -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition p-6">
-        <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
-          <img src="{{ asset('images/someone.png') }}" alt="Ahmad Rizki" class="w-full h-full object-cover">
-        </div>
-        <div class="text-center">
-          <h3 class="text-xl font-bold text-gray-800">Ahmad Rizki</h3>
-          <p class="text-purple-600 font-semibold text-sm mb-2">Founder & Creative Director</p>
-          <p class="text-gray-600 text-sm mb-4">10+ tahun pengalaman di industri creative digital dengan expertise di UI/UX Design dan Brand Strategy</p>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">UI/UX Design</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Brand Strategy</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Creative Direction</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Sarah Putri -->
+      @foreach($teams as $member)
       <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition p-6">
         <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
-           <img src="{{ asset('images/someone.png') }}" alt="Sarah Putri" class="w-full h-full object-cover">
+          <img src="{{ asset('storage/' . ($member->photo ?? 'images/someone.png')) }}" alt="{{ $member->name }}" class="w-full h-full object-cover">
         </div>
         <div class="text-center">
-          <h3 class="text-xl font-bold text-gray-800">Sarah Putri</h3>
-          <p class="text-purple-600 font-semibold text-sm mb-2">Lead UI/UX Designer</p>
-          <p class="text-gray-600 text-sm mb-4">Spesialis UI/UX dengan passion untuk menciptakan user experience yang memorable dan conversion-focused</p>
+          <h3 class="text-xl font-bold text-gray-800">{{ $member->name }}</h3>
+          <p class="text-purple-600 font-semibold text-sm mb-2">{{ $member->position }}</p>
+          <p class="text-gray-600 text-sm mb-4">{{ $member->description }}</p>
           <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">User Research</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Prototyping</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Design Systems</span>
+            @foreach(explode(',', $member->skills ?? '') as $skill)
+              @if(trim($skill) !== '')
+              <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">
+                {{ trim($skill) }}
+              </span>
+              @endif
+            @endforeach
           </div>
         </div>
       </div>
-
-      <!-- Budi Santoso -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition p-6">
-        <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
-           <img src="{{ asset('images/someone.png') }}" alt="Budi Santoso" class="w-full h-full object-cover">
-        </div>
-        <div class="text-center">
-          <h3 class="text-xl font-bold text-gray-800">Budi Santoso</h3>
-          <p class="text-purple-600 font-semibold text-sm mb-2">Lead Developer</p>
-          <p class="text-gray-600 text-sm mb-4">Full-stack developer dengan expertise di React, Next.js, dan modern web technologies</p>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">React/Next.js</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Node.js</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Mobile Development</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Maya Sari -->
-      <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition p-6">
-        <div class="w-full h-48 rounded-xl overflow-hidden mb-4">
-           <img src="{{ asset('images/someone.png') }}" alt="Maya Sari" class="w-full h-full object-cover">
-        </div>
-        <div class="text-center">
-          <h3 class="text-xl font-bold text-gray-800">Maya Sari</h3>
-          <p class="text-purple-600 font-semibold text-sm mb-2">Digital Marketing Specialist</p>
-          <p class="text-gray-600 text-sm mb-4">Expert dalam social media strategy, content marketing, dan digital campaign optimization</p>
-          <div class="flex flex-wrap justify-center gap-2">
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Social Media</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">Content Strategy</span>
-            <span class="bg-violet-100 text-violet-700 text-xs font-medium px-3 py-1 rounded-full">SEO/SEM</span>
-          </div>
-        </div>
-      </div>
+      @endforeach
 
     </div>
   </div>
