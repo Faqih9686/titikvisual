@@ -27,7 +27,7 @@
                 </div>
                 <h3 class="font-semibold text-lg mb-2">UI/UX Design</h3>
                 <p class="text-sm text-gray-600 mb-4">Desain interface yang user-friendly dan menarik untuk website dan aplikasi mobile</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 bg-pink-500 text-white text-sm rounded hover:bg-pink-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
+                <a href="{{ route('detail') }}" class="inline-flex items-center px-4 py-2 bg-pink-500 text-white text-sm rounded hover:bg-pink-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
                     ➜ Lihat Detail
                 </a>
             </div>
@@ -45,7 +45,7 @@
                 </div>
                 <h3 class="font-semibold text-lg mb-2">Website & Aplikasi</h3>
                 <p class="text-sm text-gray-600 mb-4">Website responsif dan aplikasi mobile dengan teknologi terdepan</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm rounded hover:bg-blue-500 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
+                <a href="{{ route('web') }}" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm rounded hover:bg-blue-500 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
                     ➜ Lihat Detail
                 </a>
             </div>
@@ -65,7 +65,7 @@
                 </div>
                 <h3 class="font-semibold text-lg mb-2">Logo Design</h3>
                 <p class="text-sm text-gray-600 mb-4">Logo profesional yang mencerminkan identitas dan nilai brand Anda</p>
-                <a href="#" class="inline-flex items-center px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
+                <a href="{{ route('logo') }}" class="inline-flex items-center px-4 py-2 bg-orange-500 text-white text-sm rounded hover:bg-orange-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
                     ➜ Lihat Detail
                 </a>
             </div>
@@ -91,7 +91,7 @@
   </p>
 
   <!-- Tombol -->
-  <a href="#" class="inline-flex items-center px-4 py-2 bg-pink-500 text-white text-sm rounded hover:bg-pink-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
+  <a href="{{ route('media') }}" class="inline-flex items-center px-4 py-2 bg-pink-500 text-white text-sm rounded hover:bg-pink-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
     ➜ Lihat Detail
   </a>
 </div>
@@ -121,11 +121,10 @@
   </p>
 
   <!-- Tombol -->
-  <a href="#" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
+  <a href="{{ route('merch') }}" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 hover:shadow-lg hover:scale-105 transform transition duration-200 ease-in-out">
     ➜ Lihat Detail
   </a>
 </div>
-
 </section>
 
 <!-- digital creative -->
