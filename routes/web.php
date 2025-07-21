@@ -39,3 +39,33 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.subm
 //layanan & detail
 Route::get('/pagelayanan', [LandingPageController::class, 'layanan'])->name('pagelayanan.layanan');
 Route::get('/page_detaillayanan/{slug}', [LandingPageController::class, 'detaillayanan'])->name('page_detaillayanan.detail');
+
+// Detail layanan 
+Route::get('/detail-layanan', function () {
+    $testimoni = Testimoni::latest()->take(3)->get();
+    return view('page_detaillayanan.detail', compact('testimoni'));
+})->name('detail');
+
+// website
+Route::get('/web-website', function () {
+    $testimoni = Testimoni::latest()->take(3)->get();
+    return view('page_website.website', compact('testimoni'));
+})->name('web');
+
+// logo
+Route::get('/logo-design', function () {
+    $testimoni = Testimoni::latest()->take(3)->get();
+    return view('page_logo.design', compact('testimoni'));
+})->name('logo');
+
+// social
+Route::get('/social-media', function () {
+    $testimoni = Testimoni::latest()->take(3)->get();
+    return view('page_social.social', compact('testimoni'));
+})->name('media');
+
+// merchandise
+Route::get('/merch-merchandise', function () {
+    $testimoni = Testimoni::latest()->take(3)->get();
+    return view('page_merchandise.merch', compact('testimoni'));
+})->name('merch');
