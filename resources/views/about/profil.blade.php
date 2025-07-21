@@ -339,55 +339,6 @@
 </section>
 
 
-<!-- apa kata klien kami -->
-<section class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4">
-    <!-- Header -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl sm:text-4xl font-bold text-indigo-600 mb-2">Apa Kata Klien Kami</h2>
-      <p class="text-gray-600 text-lg">Testimoni dari klien yang telah mempercayai kami</p>
-    </div>
-
-    <!-- Testimoni Cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Card 1 -->
-      <div class="bg-white rounded-xl border shadow-sm p-6">
-        <div class="text-4xl text-purple-300 mb-3">❝</div>
-        <div class="flex items-center text-yellow-400 mb-3 space-x-1">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="text-gray-700 text-sm mb-4">"Titik Visual tidak hanya memberikan hasil yang luar biasa, tapi juga proses kerja yang sangat profesional. Tim mereka benar-benar memahami kebutuhan bisnis kami."</p>
-        <div class="font-bold text-sm text-gray-900">Dr. Siti Nurhaliza</div>
-        <div class="text-xs text-gray-500 mb-2">CEO at HealthTech Indonesia</div>
-        <img src="{{ asset('images/profil.png') }}" alt="ID" class="w-10 h-6 object-cover">
-      </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-xl border shadow-sm p-6">
-        <div class="text-4xl text-purple-300 mb-3">❝</div>
-        <div class="flex items-center text-yellow-400 mb-3 space-x-1">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="text-gray-700 text-sm mb-4">"Dari UI/UX design hingga development, Titik Visual memberikan solusi end-to-end yang sangat memuaskan. Highly recommended untuk startup dan enterprise!"</p>
-        <div class="font-bold text-sm text-gray-900">Andi Wijaya</div>
-        <div class="text-xs text-gray-500 mb-2">Founder at StartupHub Jakarta</div>
-        <img src="{{ asset('images/profil.png') }}" alt="ID" class="w-10 h-6 object-cover">
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-xl border shadow-sm p-6">
-        <div class="text-4xl text-purple-300 mb-3">❝</div>
-        <div class="flex items-center text-yellow-400 mb-3 space-x-1">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-        </div>
-        <p class="text-gray-700 text-sm mb-4">"Social media management dan digital marketing campaign dari Titik Visual berhasil meningkatkan engagement kami hingga 300%. Luar biasa!"</p>
-        <div class="font-bold text-sm text-gray-900">Lisa Chen</div>
-        <div class="text-xs text-gray-500 mb-2">Marketing Director at E-Commerce Plus</div>
-        <img src="{{ asset('images/profil.png') }}" alt="ID" class="w-10 h-6 object-cover">
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <!-- CTA Gradient Atas -->
