@@ -339,7 +339,7 @@
 </section>
 
 
-
+@include('components.client')
 
 <!-- CTA Gradient Atas -->
 <section class="bg-gradient-to-r from-purple-500 via-indigo-400 to-cyan-400 text-white text-center py-16 px-4">
