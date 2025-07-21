@@ -1,6 +1,6 @@
 @extends('layouts.apu')
 
-@section('title', 'Logo Desain - Titik Visual')
+@section('title', 'Sosial Media - Titik Visual')
 
 @section('content')
 
@@ -13,7 +13,7 @@
         <li>/</li>
         <li><a href="#" class="hover:underline">Services</a></li>
         <li>/</li>
-        <li class="text-purple-600 font-semibold">Logo Design</li>
+        <li class="text-purple-600 font-semibold">Social Media</li>
       </ol>
     </nav>
   </div>
@@ -903,7 +903,6 @@
 
 
 @include('components.client')
-
 
 <!-- CTA Gradient Atas -->
 <section class="bg-gradient-to-r from-pink-500 via-pink-400 to-blue-500 text-white text-center py-16 px-4">
