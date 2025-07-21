@@ -43,7 +43,7 @@
     <!-- Tombol -->
     <div class="flex justify-center space-x-4">
  <!-- Tombol Lihat Portofolio -->
-  <a href="{{ route('portofolio.index') }}"
+  <a href="#"
      class="bg-gradient-to-r from-purple-500 to-cyan-500 text-white px-5 py-2 rounded-full font-medium shadow hover:opacity-90 inline-flex items-center space-x-2">
      
     <!-- SVG Icon -->
@@ -57,7 +57,7 @@
     <span>Lihat Portofolio</span>
   </a>
 
-      <a href="{{ route('contact.konsultasi') }}"
+      <a href="#"
    class="border border-gray-300 px-5 py-2 rounded-full font-medium text-gray-700 hover:bg-gray-100 inline-flex items-center space-x-2">
   <span>💬</span>
   <span>Konsultasi Gratis</span>
@@ -80,6 +80,7 @@
       @foreach ($services as $service)
       <div class="border rounded-xl p-6 hover:shadow-xl transition duration-300 ease-in-out">
         <div class="bg-purple-50 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4">
+          <!-- Optional: jika kamu punya ikon di DB -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
           </svg>
@@ -92,7 +93,8 @@
   </div>
 </section>
 
-   <!-- Section: Mengapa Memilih Titik Visual -->
+
+<!-- Section: Mengapa Memilih Titik Visual -->
 <section class="bg-white py-20">
   <div class="max-w-6xl mx-auto px-4 text-center">
     <h2 class="text-4xl font-extrabold text-gray-900 mb-4">
@@ -155,6 +157,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- Section: Custom Merchandise -->
 <section class="py-20 bg-white">
@@ -545,65 +548,186 @@
 </div>
 </div>
 
+<section class="py-8 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       
-<!-- Section: Join Team -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="text-center mb-12">
-      <h2 class="text-4xl font-extrabold text-gray-900">
-        Join <span class="bg-gradient-to-r from-pink-500 to-purple-600 text-transparent bg-clip-text">Our Team</span>
-      </h2>
-      <p class="text-gray-600 text-lg mt-4">
-        Jadilah bagian dari perjalanan kreatif kami di Titik Visual.
-      </p>
-    </div>
-
-    @if (!isset($jobs) || $jobs->isEmpty())
-      <p class="text-center text-gray-500">Belum ada lowongan tersedia saat ini.</p>
-    @else
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        @foreach ($jobs as $job)
-          <div class="relative bg-white rounded-xl shadow p-6 border">
-            <!-- Label -->
-            <div class="absolute top-4 right-4">
-              <span class="inline-flex items-center gap-1 px-3 py-1 text-xs font-semibold {{ $job->badge_color ?? 'bg-purple-100 text-purple-600' }} rounded-full">
-                {!! $job->badge_icon ?? '' !!}
-                {{ $job->type ?? 'Magang' }}
-              </span>
+      <!-- Kartu 1 -->
+      <div class="bg-white shadow-md rounded-xl p-4 border">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+              <!-- Icon -->
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.9061 21.7928C15.7185 21.9803 15.4642 22.0856 15.1991 22.0856C14.9339 22.0856 14.6796 21.9803 14.4921 21.7928L12.9061 20.2069C12.7186 20.0193 12.6133 19.765 12.6133 19.4998C12.6133 19.2347 12.7186 18.9804 12.9061 18.7928L18.4921 13.2068C18.6796 13.0194 18.9339 12.9141 19.1991 12.9141C19.4642 12.9141 19.7185 13.0194 19.9061 13.2068L21.4921 14.7928C21.6795 14.9804 21.7849 15.2347 21.7849 15.4998C21.7849 15.765 21.6795 16.0193 21.4921 16.2068L15.9061 21.7928Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18.1992 13.5L16.8242 6.62601C16.7868 6.43899 16.6967 6.26656 16.5645 6.12907C16.4324 5.99157 16.2636 5.89475 16.0782 5.85001L3.43422 2.52801C3.26765 2.48773 3.09353 2.49094 2.92855 2.53733C2.76358 2.58371 2.61329 2.67172 2.49211 2.79289C2.37093 2.91407 2.28293 3.06436 2.23655 3.22933C2.19016 3.39431 2.18695 3.56843 2.22722 3.73501L5.54922 16.379C5.59397 16.5644 5.69079 16.7331 5.82829 16.8653C5.96578 16.9975 6.1382 17.0876 6.32522 17.125L13.1992 18.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 2.79688L9.786 10.0829" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M11.1992 13.5C12.3038 13.5 13.1992 12.6046 13.1992 11.5C13.1992 10.3954 12.3038 9.5 11.1992 9.5C10.0946 9.5 9.19922 10.3954 9.19922 11.5C9.19922 12.6046 10.0946 13.5 11.1992 13.5Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </div>
-
-            <!-- Judul dan Deskripsi -->
-            <div class="flex items-start gap-3 mb-5">
-              <div class="w-10 h-10 {{ $job->badge_color ?? 'bg-purple-100 text-purple-600' }} rounded-full flex items-center justify-center">
-                {!! $job->icon ?? '<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l9 5-9 5-9-5 9-5z" /></svg>' !!}
-              </div>
-              <div>
-                <h3 class="font-bold text-lg leading-tight">{{ $job->title }}</h3>
-                <p class="text-sm text-gray-500">{{ $job->description }}</p>
-              </div>
+            <div>
+              <h3 class="font-bold text-lg">UI/UX Designer</h3>
+              <p class="text-sm text-gray-600">Bergabung dengan tim Titik Visual sebagai UI/UX Designer</p>
             </div>
-
-            <!-- Syarat -->
-            <ul class="text-sm text-gray-600 space-y-2 mb-5">
-              @foreach ($job->requirements as $req)
-                <li class="flex items-start gap-2">
-                  <svg class="w-4 h-4 text-purple-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
-                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span>{{ $req }}</span>
-                </li>
-              @endforeach
-            </ul>
-
-            <!-- Tombol -->
-            <button class="flex items-center gap-2 bg-gradient-to-r {{ $job->button_color ?? 'from-pink-500 to-red-500' }} text-white px-6 py-2 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 hover:scale-105 transform transition duration-300 ease-in-out text-sm font-medium">
-              Lamar Sekarang
-            </button>
           </div>
-        @endforeach
+          <span class="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded-full">💼 Magang</span>
+        </div>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+          <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa DKV, Multimedia, atau relevan</span>
+          </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Menguasai Figma, Adobe XD, Sketch</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Memahami prinsip UI/UX design</span>
+            </div>
+        </ul>
+        <a href="#" class="block w-full text-center text-white bg-gradient-to-r from-purple-500 to-pink-500 py-2 rounded-lg font-semibold hover:opacity-90 transition">→ Lamar Sekarang</a>
       </div>
-    @endif
+
+      <!-- Duplikat dan ubah sesuai kebutuhan -->
+      <div class="bg-white shadow-md rounded-xl p-6 border">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1992 18.5L22.1992 12.5L16.1992 6.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.19922 6.5L2.19922 12.5L8.19922 18.5" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Web Developer</h3>
+              <p class="text-sm text-gray-600">Bangun website dan aplikasi web bersama tim Titik Visual</p>
+            </div>
+          </div>
+          <span class="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded-full">💼 Magang</span>
+        </div>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+          <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa Informatika, Sistem informasi</span>
+          </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Familiar dengan React, Next.js</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Menguasai HTML, CSS, JavaScript</span>
+            </div>
+        </ul>
+        <a href="#" class="block w-full text-center text-white bg-gradient-to-r from-sky-500 to-cyan-500 py-2 rounded-lg font-semibold hover:opacity-90 transition">→ Lamar Sekarang</a>
+      </div>
+
+      <!-- Digital Marketing -->
+      <div class="bg-white shadow-md rounded-xl p-6 border">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.1992 3.10156H4.19922C3.09465 3.10156 2.19922 3.99699 2.19922 5.10156V15.1016C2.19922 16.2061 3.09465 17.1016 4.19922 17.1016H20.1992C21.3038 17.1016 22.1992 16.2061 22.1992 15.1016V5.10156C22.1992 3.99699 21.3038 3.10156 20.1992 3.10156Z" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.1992 17.1016V21.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Digital Marketing Specialist</h3>
+              <p class="text-sm text-gray-600">Kembangkan strategi digital marketing di Titik Visual</p>
+            </div>
+          </div>
+          <span class="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded-full">💼 Magang</span>
+        </div>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+          <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa aktif (minimal semester 4)</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Jurusan pemasaran, komunikasi, bisnis</span>
+            </div>
+            <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Memahami SEO, Social Media, Email Marketing</span>
+            </div>
+        </ul>
+        <a href="#" class="block w-full text-center text-white bg-gradient-to-r from-cyan-500 to-blue-600 py-2 rounded-lg font-semibold hover:opacity-90 transition">→ Lamar Sekarang</a>
+      </div>
+
+      <!-- Social Media -->
+      <div class="bg-white shadow-md rounded-xl p-6 border">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center text-pink-600">
+             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.1992 7.10156L13.6992 15.6016L8.69922 10.6016L2.19922 17.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16.1992 7.10156H22.1992V13.1016" stroke="#9333EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+             </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Social Media Specialist</h3>
+              <p class="text-sm text-gray-600">Kelola dan kembangkan media sosial klien Titik Visual</p>
+            </div>
+          </div>
+          <span class="text-xs px-2 py-1 bg-purple-100 text-purple-600 rounded-full">💼 Magang</span>
+        </div>
+        <ul class="text-sm text-gray-700 space-y-1 mb-4">
+             <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Mahasiswa aktif (minimal semester 4)</span>
+            </div>
+               <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Memahami platform media sosial</span>
+            </div>
+               <div class="flex items-center space-x-2">
+            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9935 8.18996V8.8033C14.9927 10.2409 14.5272 11.6397 13.6664 12.7912C12.8056 13.9426 11.5957 14.7849 10.2171 15.1926C8.83844 15.6002 7.365 15.5512 6.01647 15.053C4.66794 14.5548 3.51659 13.634 2.73413 12.428C1.95167 11.222 1.58002 9.79534 1.67461 8.36084C1.7692 6.92634 2.32496 5.56085 3.25901 4.46801C4.19306 3.37517 5.45535 2.61355 6.85762 2.29673C8.25989 1.9799 9.727 2.12485 11.0402 2.70996" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.32812 8.13542L8.32813 10.1354L14.9948 3.46875" stroke="#22C55E" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Kreatif dalam content creation</span>
+            </div>
+        </ul>
+        <a href="#" class="block w-full text-center text-white bg-gradient-to-r from-pink-500 to-rose-500 py-2 rounded-lg font-semibold hover:opacity-90 transition">→ Lamar Sekarang</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
