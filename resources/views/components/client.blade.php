@@ -4,7 +4,7 @@
     <p class="text-center text-gray-500 mb-10">Testimoni dari klien yang puas dengan layanan kami</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      @foreach($testimoni as $item)
+      @foreach($testimonis as $item)
         <div class="p-6 border rounded-lg shadow-md hover:shadow-lg transition duration-300 bg-white">
           <div class="flex items-center mb-4 text-yellow-400">
             <span class="text-xl">

@@ -12,6 +12,14 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\Repeater;
+
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+
 
 class TeamResource extends Resource
 {
@@ -21,18 +29,25 @@ class TeamResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
-            ->schema([
-                
-            ]);
+        return $form->schema([
+            TextInput::make('name')->required(),
+            TextInput::make('position')->required(),
+            FileUpload::make('photo')
+                ->image()
+                ->directory('team') // simpan ke storage/app/public/team
+                ->visibility('public'),
+            Textarea::make('description')->rows(4),
+        ]);
     }
 
     public static function table(Table $table): Table
     {
-        return $table
-            ->columns([
-                //
-            ])
+        return $table->columns([
+            ImageColumn::make('photo')->square(),
+            TextColumn::make('name')->searchable()->sortable(),
+            TextColumn::make('position')->searchable()->sortable(),
+            TextColumn::make('created_at')->dateTime()->label('Created'),
+        ])
             ->filters([
                 //
             ])
