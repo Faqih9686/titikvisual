@@ -47,6 +47,8 @@ Route::get('/detail-layanan', function () {
     return view('page_detaillayanan.detail', compact('testimoni'));
 })->name('detail');
 
+
+
 // website
 Route::get('/web-website', function () {
     $testimoni = Testimoni::latest()->take(3)->get();
@@ -70,3 +72,6 @@ Route::get('/merch-merchandise', function () {
     $testimoni = Testimoni::latest()->take(3)->get();
     return view('page_merchandise.merch', compact('testimoni'));
 })->name('merch');
+
+// landingintern
+Route::get('/landingintern', [LandingPageController::class, 'intern'])->name('landingintern.index');

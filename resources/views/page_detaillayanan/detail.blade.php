@@ -41,7 +41,6 @@
             </clipPath>
           </defs>
         </svg>
-
         UI/UX Design Service
       </span>
 
@@ -238,7 +237,6 @@
         </div>
       </div>
 
-
       <div class="border rounded-xl p-6 transform hover:scale-105 hover:shadow-lg transition duration-300">
         <div class="flex items-center gap-3 mb-2">
           <span class="text-white bg-purple-500 px-3 py-1 rounded-full text-sm font-semibold">03</span>
@@ -263,7 +261,6 @@
           3–5 hari
         </div>
       </div>
-
 
       <div class="border rounded-xl p-6 transform hover:scale-105 hover:shadow-lg transition duration-300">
         <div class="flex items-center gap-3 mb-2">

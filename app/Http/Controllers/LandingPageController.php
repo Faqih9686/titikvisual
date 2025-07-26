@@ -85,4 +85,9 @@ class LandingPageController extends Controller
             'teams' => Team::all(),
         ]);
     }
+
+    public function intern()
+    {
+        return view('landingintern.index');
+    }
 }
